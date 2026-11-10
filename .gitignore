@@ -1,0 +1,14 @@
+temp/
+node_modules/
+dist/
+site/build/
+site/docs/dist/
+site/static/skills/
+site/.filepress/
+site/.filepress-genie/
+site/.svelte-kit/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!/.env.example
