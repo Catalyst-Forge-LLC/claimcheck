@@ -14,7 +14,9 @@
 
 - [ ] Confirm LBNL 2024 Section 5 figures on the primary PDF (pp. 55–57); move them from "via transcription" to "read directly" in `docs/sources.md`
 - [ ] Confirm whether the LBNL 2025 Update publishes water totals
-- [ ] Register claimcheck.dev (or pick the domain) and the Cloudflare Pages project `claimcheck`
+- [x] Domain secured: claimcheck.dev (Sam, 2026-11-10)
+- [ ] Create the Cloudflare Pages project `claimcheck` and point claimcheck.dev at it
+- [ ] Confirm the `claimcheck` package name is available on npm (Sam checking)
 - [ ] Create GitHub repo `Catalyst-Forge-LLC/claimcheck`
 - [ ] Confirm LocalSlip lease `claimcheck-site` on 5205 is free
 - [ ] Real logo (current one is a placeholder mark)
