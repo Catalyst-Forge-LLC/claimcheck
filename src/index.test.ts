@@ -79,8 +79,8 @@ test("every fixture has a labeled claim and an expected score", () => {
 	for (const folder of folders) {
 		const claim = read("fixtures", folder.name, "claim.md");
 		const expected = read("fixtures", folder.name, "expected.md");
-		assert.match(claim, /Labeled example/, folder.name);
-		assert.match(claim, /Not a quotation|not a quotation/, folder.name);
+		assert.match(claim, /^Example\. /m, folder.name);
+		assert.doesNotMatch(claim, /quotation/i, folder.name);
 		assert.match(expected, /^Score: /m, folder.name);
 	}
 });
@@ -109,14 +109,13 @@ test("sample reports follow the report shape and their score line matches", () =
 	}
 });
 
-test("worked example cites the primary sources and never claims a quotation", () => {
+test("worked example cites the primary sources and is introduced as a common sentiment", () => {
 	const report = read("site", "static", "samples", "data-center-water.claimcheck.md");
 	assert.match(report, /eta-publications\.lbl\.gov/);
 	assert.match(report, /pubs\.usgs\.gov\/publication\/cir1441/);
-	assert.match(report, /illustrative composite/);
-	assert.match(report, /not a\s+quotation of any author/);
-	for (const surface of [read("README.md"), read("site", "pages", "home.md")]) {
-		assert.match(surface, /illustrative/i);
+	for (const surface of [report, read("README.md"), read("site", "pages", "home.md")]) {
+		assert.match(surface, /common sentiment about AI and water/);
+		assert.doesNotMatch(surface, /quotation/i);
 	}
 });
 

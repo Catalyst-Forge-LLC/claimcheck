@@ -1,7 +1,6 @@
 # STOP blaming your shower!!!
 
-Illustrative example. Labeled example. Written for ClaimCheck to
-calibrate tone versus literacy. Not a quotation of any author.
+Example. Written for ClaimCheck to calibrate tone versus literacy.
 
 ---
 

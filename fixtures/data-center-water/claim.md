@@ -1,8 +1,7 @@
 # AI is drinking our water
 
-Illustrative composite. Labeled example. This is a representative
-paraphrase of a widely shared kind of post about AI and water. It is
-not a quotation of any author, and no real post is reproduced here.
+Example. A common sentiment about AI and water, written out as one
+post. Assertions like these merit a more careful check.
 
 ---
 

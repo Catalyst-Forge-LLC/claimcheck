@@ -1,13 +1,13 @@
 # ClaimCheck — "AI is drinking our water"
 
 Worked sample, written to show the report format. The source is an
-illustrative composite of a widely shared kind of post, not a
-quotation of any author. Figures in **Contrast** were checked on 2026-11-10
-against the sources listed at the end. Where a figure was read
+example of a common sentiment about AI and water, the kind of
+assertion that merits a more careful check. Figures in **Contrast**
+were checked on 2026-11-10 against the sources listed at the end. Where a figure was read
 through a secondary transcription rather than the primary PDF page,
 the finding says so.
 
-**Source:** `data-center-water.md` (illustrative composite), read 2026-11-10. Unchanged.
+**Source:** `data-center-water.md` (example), read 2026-11-10. Unchanged.
 **Central claim:** > "These AI data centers are wasting billions of gallons of water a year — water that is gone forever"
 **Summary:** clear failures: 6 · partial: 1 · passed: 0 · N/A: 0
 **Score:** 0.5 / 7

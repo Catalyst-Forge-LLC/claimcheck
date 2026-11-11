@@ -102,7 +102,7 @@ Open `led-lighting.claimcheck.md`. Look for seven findings, recency marked parti
 
 ## A harder sample
 
-[data-center-water.md](/samples/data-center-water.md) is the worked example: an illustrative composite of a viral post about AI and water. Expect six clear failures and one partial (boundary), a score near `0.5 / 7`, and a **Next steps** list that starts with the local reservoir question. Compare with the [complete sample report](/samples/data-center-water.claimcheck.md).
+[data-center-water.md](/samples/data-center-water.md) is the worked example: a common sentiment about AI and water, written out as one post. Expect six clear failures and one partial (boundary), a score near `0.5 / 7`, and a **Next steps** list that starts with the local reservoir question. Compare with the [complete sample report](/samples/data-center-water.claimcheck.md).
 
 ## After the review
 

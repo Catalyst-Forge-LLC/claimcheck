@@ -14,7 +14,7 @@ order: 0
 </div>
 <figure class="value-proof worked-example" id="one-example-illustrative" tabindex="-1">
 <figcaption>From a viral claim to the questions that settle it</figcaption>
-<p class="example-context">An illustrative composite of a widely shared kind of post about AI and water. Not a quotation of any author.</p>
+<p class="example-context">A common sentiment about AI and water, and the kind of assertion that merits a more careful check.</p>
 <section class="example-step" aria-labelledby="example-before">
 <h2 id="example-before"><span>1 · The claim</span> Big number, no baseline</h2>
 <blockquote><p>These AI data centers are wasting billions of gallons of water a year — water that is gone forever, boiled off so a machine can write someone’s homework or a bad poem.</p></blockquote>
@@ -64,7 +64,7 @@ The score is a summary line. Two claims at 3.5 can fail for different reasons, s
 
 ## A claim that mostly holds (illustrative)
 
-Labeled example. A short post advising LED swaps, citing DOE.
+A short post advising LED swaps, citing DOE.
 
 ```markdown
 # ClaimCheck — swap the last incandescent bulbs

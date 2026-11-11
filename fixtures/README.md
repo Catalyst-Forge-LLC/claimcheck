@@ -12,10 +12,10 @@ model run has passed.
 | `led-lighting/` | A mostly-passing claim. Partial on recency and evidence only. | 6 / 7 |
 | `loud-but-literate/` | Loud register, literate content. Tone findings are a miss. One `N/A`. | 5 / 6 (1 N/A) |
 
-Every source is an illustrative example written for ClaimCheck and
-labeled as such. `data-center-water/claim.md` paraphrases the kind
-of post discussed when ClaimCheck was designed; it is not a
-quotation of any author.
+Every source is an example written for ClaimCheck and opens with
+the word "Example." `data-center-water/claim.md` puts a common
+sentiment into one post: assertions that are widely made and merit
+a more careful check.
 
 Wording varies by model. Check statuses and the quoted evidence,
 not exact sentences. A report that invents a number without marking

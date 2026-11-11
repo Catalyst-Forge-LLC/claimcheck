@@ -1,11 +1,11 @@
 # ClaimCheck — "Swap the last incandescent bulbs"
 
 Worked sample, written to show a mostly-passing report. The source
-is an illustrative example written for ClaimCheck. Figures in
+is an example written for ClaimCheck. Figures in
 **Contrast** were checked on 2026-11-10 against the sources listed
 at the end.
 
-**Source:** `led-lighting.md` (illustrative), read 2026-11-10. Unchanged.
+**Source:** `led-lighting.md` (example), read 2026-11-10. Unchanged.
 **Central claim:** > "If you still have incandescent bulbs in the lamps you leave on for hours, swap them for LEDs."
 **Summary:** clear failures: 0 · partial: 2 · passed: 5 · N/A: 0
 **Score:** 6 / 7

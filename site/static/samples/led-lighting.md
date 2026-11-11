@@ -1,7 +1,6 @@
 # Swap the last incandescent bulbs
 
-Illustrative example. Labeled example. Written for ClaimCheck to show
-a mostly-passing claim. Not a quotation of any author.
+Example. Written for ClaimCheck to show a claim that mostly holds.
 
 ---
 

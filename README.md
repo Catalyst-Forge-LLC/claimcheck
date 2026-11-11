@@ -45,8 +45,8 @@ the product.
 
 ## Worked example: "AI is drinking our water"
 
-Illustrative composite of a widely shared kind of post about AI and
-water. Not a quotation of any author:
+A common sentiment about AI and water, and the kind of assertion
+that merits a more careful check:
 
 > These AI data centers are wasting billions of gallons of water a
 > year — water that is gone forever, boiled off so a machine can
