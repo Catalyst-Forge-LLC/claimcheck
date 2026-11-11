@@ -30,7 +30,14 @@ const dimensionText = [
 /** Collapses line wrapping so a sentence can be matched wherever the file breaks it. */
 const flat = (text: string) => text.replace(/\s+/g, " ");
 
-const sampleNames = ["data-center-water", "led-lighting", "processed-meat", "crime-statistics"] as const;
+const sampleNames = [
+	"data-center-water",
+	"water-rounding-error",
+	"led-lighting",
+	"processed-meat",
+	"crime-statistics",
+	"loud-but-literate",
+] as const;
 
 test("skill folder ships SKILL.md and its references", () => {
 	assert.deepEqual(assertSkillsPresent(), []);

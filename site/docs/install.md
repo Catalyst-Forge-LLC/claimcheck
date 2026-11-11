@@ -105,9 +105,13 @@ Open `led-lighting.claimcheck.md`. Look for seven findings, recency marked parti
 
 [data-center-water.md](/samples/data-center-water.md) is the worked example: a common sentiment about AI and water, written out as one post. Expect five clear failures, two partials (boundary, and trade-offs because the remedy is a side claim), and a **Next steps** list that starts with the local reservoir question. Compare with the [complete sample report](/samples/data-center-water.claimcheck.md).
 
+[water-rounding-error.md](/samples/water-rounding-error.md) is the same subject from the other side: a common sentiment that the concern is nothing (“If the national number is a rounding error, the local one is too”). Expect clear failures on mechanism and boundary, magnitude and recency marked **partial**, output and evidence **passed**, and trade-offs **N/A**. Compare with the [complete sample report](/samples/water-rounding-error.claimcheck.md).
+
 [processed-meat.md](/samples/processed-meat.md) is a health-risk claim: a common sentiment about processed meat and cancer (“A ham sandwich is as dangerous as smoking”). Expect clear failures on mechanism and magnitude, partials on the other five, and a report that keeps the underlying finding: processed meat does cause colorectal cancer. Compare with the [complete sample report](/samples/processed-meat.claimcheck.md).
 
 [crime-statistics.md](/samples/crime-statistics.md) is a claim about public statistics: a common sentiment about crime (“It is the worst it has ever been in this country”). Expect clear failures on magnitude and evidence, boundary marked **partial** because the writer’s own city is a real concern, trade-offs marked **partial** because the remedy is a side claim, and output marked **N/A**. Compare with the [complete sample report](/samples/crime-statistics.claimcheck.md).
+
+[loud-but-literate.md](/samples/loud-but-literate.md) is a shouting post with sound numbers. Expect four dimensions **passed**, output and recency **partial**, trade-offs **N/A**, and no finding about capital letters or exclamation marks. Compare with the [complete sample report](/samples/loud-but-literate.claimcheck.md).
 
 Statuses can vary from one model or run to the next, most often between **partial** and its neighbors. Check the quoted evidence and the claim ids, not the count.
 

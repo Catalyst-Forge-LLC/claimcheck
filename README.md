@@ -92,7 +92,15 @@ This is a sample report on an illustrative source, not a recorded
 run. [Complete sample report](https://claimcheck.dev/samples/data-center-water.claimcheck.md) ·
 [sources and arithmetic](https://github.com/Catalyst-Forge-LLC/claimcheck/blob/main/docs/sources.md).
 
-A second sample, [processed-meat.claimcheck.md](https://claimcheck.dev/samples/processed-meat.claimcheck.md),
+The mirror claim fails too. [water-rounding-error.claimcheck.md](https://claimcheck.dev/samples/water-rounding-error.claimcheck.md)
+reviews "AI water use is a rounding error": a post with a real
+figure and real sources that concludes "nobody who lives near a
+data center has anything to worry about." Two clear failures
+(evaporated water treated as not used; a national share carried
+down to every local supply), two partials, two passes. Both reports
+end on the same local question.
+
+A second subject, [processed-meat.claimcheck.md](https://claimcheck.dev/samples/processed-meat.claimcheck.md),
 is a health-risk claim: "A ham sandwich is as dangerous as smoking."
 Two clear failures and five partials. The underlying finding survives
 (IARC, 2015: processed meat causes colorectal cancer); the post's
@@ -108,6 +116,10 @@ writer's own city survives as a real, checkable concern.
 A fourth, [led-lighting.claimcheck.md](https://claimcheck.dev/samples/led-lighting.claimcheck.md),
 passes five dimensions and is partial on two: a sound claim with
 one superseded figure and one uncited line.
+
+A fifth, [loud-but-literate.claimcheck.md](https://claimcheck.dev/samples/loud-but-literate.claimcheck.md),
+is a shouting post with sound numbers. It passes four dimensions,
+and its capital letters are not findings.
 
 The subjects differ on purpose. ClaimCheck asks the same seven
 questions of any claim, whichever way it leans.

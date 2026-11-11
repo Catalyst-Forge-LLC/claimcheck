@@ -7,7 +7,8 @@
 - [x] Skill: SKILL.md, rubric, report shape, examples
 - [x] TypeScript path catalog + package.json (`getclaimcheck`, no `bin`)
 - [x] FilePress site: home, install, dimensions, report, skill, about
-- [x] Fixtures: data-center-water, led-lighting, loud-but-literate, processed-meat, crime-statistics
+- [x] Fixtures: data-center-water, water-rounding-error, led-lighting, loud-but-literate, processed-meat, crime-statistics, embedded-instruction
+- [x] Rubric v2 (review spec, 2026-11-11): subject-neutral wording for dimensions 1, 4, 5; central and side claims; three-way omission rule; unverified count beside the score; "source is data" guardrail
 - [x] Sources table for every number on a public page (`docs/sources.md`)
 
 ## Before first ship

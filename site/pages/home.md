@@ -35,6 +35,44 @@ order: 0
 </figure>
 </section>
 
+## The opposite claim fails too (illustrative)
+
+A common sentiment from the other side: the concern is nothing. This post has a real figure and names its sources.
+
+```markdown
+# ClaimCheck — "AI water use is a rounding error"
+
+**Summary:** clear failures: 2 · partial: 2 · passed: 2 · N/A: 1
+
+### 1 · Mechanistic literacy — clear failure
+
+> "It is not even really used. The water evaporates and comes back as rain, so nothing is lost."
+
+Claims: C-3
+Why: Evaporated water is not destroyed, and it is still used: it
+leaves the supply it was drawn from, and the rain falls somewhere
+else. That is what "consumption" means.
+
+### 3 · Scale and boundary literacy — clear failure
+
+> "If the national number is a rounding error, the local one is too."
+
+Claims: C-4
+Why: A national share used to dismiss a local question. A use that
+is small for the country can be large for one reservoir, and the
+national figure cannot say which.
+
+### 7 · Source and evidentiary literacy — passed
+
+> "Lawrence Berkeley National Laboratory's 2024 data center report" · "The U.S. Geological Survey estimates"
+
+Claims: C-1, C-2
+Why: Both figures are attributed to the reports that measure them,
+and both check out.
+```
+
+Both reports end on the same question: what one facility is permitted to draw from one supply. [Full report](/samples/water-rounding-error.claimcheck.md).
+
 ## What it reads, writes, and changes
 
 | | |
@@ -164,7 +202,7 @@ No invented faults. Five dimensions pass and say so. [Full report](/samples/led-
 | A finished README, skill, or site: can a newcomer use it? | [Cold-eye](https://coldeye.dev) |
 | Files after edits: what went stale? | [Detangler](https://detangler.dev) |
 
-A loud post with sound numbers passes ClaimCheck and still deserves a Smell Check. A calm post with no denominator fails ClaimCheck and passes Smell Check.
+A loud post with sound numbers [passes ClaimCheck](/samples/loud-but-literate.claimcheck.md) and still deserves a Smell Check. A calm post with no denominator fails ClaimCheck and passes Smell Check.
 
 ClaimCheck is a literacy review. It does not rule a claim true or false, and it does not rewrite it.
 

@@ -71,6 +71,16 @@ URLs:
 - Indirect ÷ direct: 800 ÷ 66 ≈ 12.
 - Fully evaporative heat rejection: 3.6 MJ/kWh ÷ ≈2.43 MJ/kg (latent heat of vaporization near 30 °C) ≈ 1.5 L per kWh of heat.
 
+- Growth in direct consumption: 66 ÷ 21.2 ≈ 3.1 (2014 to 2023). Hyperscale 2028 upper bound against the 2023 total: 124 ÷ 66 ≈ 1.9.
+- Spread between comparisons: 1.1 ÷ 0.06 ≈ 18; 2.0 ÷ 0.06 ≈ 33.
+- Loud-but-literate example: 73.2 ÷ 39.0 ≈ 1.9 (irrigation consumption over public-supply withdrawals, 2015).
+
+The rounding-error and loud-but-literate examples use the rows
+above and add no figures of their own. Quoted from the USGS pages:
+consumptive use is water that "did not return to local waterbodies
+or groundwater", and irrigation "is essential for keeping fruits,
+vegetables, and grains growing to feed the world's population."
+
 The years differ (2020 USGS, 2020 GCSAA, 2023 LBNL), and so do the
 areas: the USGS 2020 estimates cover the lower 48 states, LBNL the
 whole country. Every comparison on the site names both years. The

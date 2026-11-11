@@ -41,6 +41,8 @@ A report that already exists at the target path is replaced, and your agent says
 | Report | Subject | Tally |
 | --- | --- | --- |
 | [data-center-water.claimcheck.md](/samples/data-center-water.claimcheck.md) | AI and water | 5 clear failures, 2 partial |
+| [water-rounding-error.claimcheck.md](/samples/water-rounding-error.claimcheck.md) | AI and water, the opposite claim | 2 clear failures, 2 partial, 2 passed, 1 N/A |
 | [processed-meat.claimcheck.md](/samples/processed-meat.claimcheck.md) | A health risk | 2 clear failures, 5 partial |
 | [crime-statistics.claimcheck.md](/samples/crime-statistics.claimcheck.md) | A public statistic | 2 clear failures, 4 partial, 1 N/A |
 | [led-lighting.claimcheck.md](/samples/led-lighting.claimcheck.md) | A claim that mostly holds | 5 passed, 2 partial |
+| [loud-but-literate.claimcheck.md](/samples/loud-but-literate.claimcheck.md) | A loud post with sound numbers | 4 passed, 2 partial, 1 N/A |
