@@ -62,6 +62,35 @@ The score is a summary line. Two claims at 3.5 can fail for different reasons, s
 6. **Recency and updating literacy.** Does it reflect current data, technology, and revisions? Fails on superseded estimates.
 7. **Source and evidentiary literacy.** Does it prefer primary measurements over secondary amplification? Fails when a single comparison is promoted over systematic reports.
 
+## A health claim, same seven questions (illustrative)
+
+A common sentiment about processed meat and cancer. The dimensions are worded for resource claims. They read the same way on a risk claim: what the category measures, what the baseline is, what the swap changes.
+
+```markdown
+# ClaimCheck — "Bacon is the new cigarettes"
+
+**Summary:** clear failures: 2 · partial: 4 · passed: 0 · N/A: 1
+**Score:** 2 / 6 (1 N/A)
+
+### 1 · Mechanistic literacy — clear failure
+
+> "in the same cancer category as cigarettes and asbestos" · "A ham sandwich is as dangerous as smoking."
+
+Why: An IARC group states how strong the evidence is that something
+can cause cancer. It does not state how much cancer it causes. IARC
+(2015): "this does NOT mean that they are all equally dangerous."
+
+### 2 · Quantitative and comparative literacy — clear failure
+
+> "raises your risk of bowel cancer by 18 percent" · "nearly one in five people who eat the stuff will get cancer from it"
+
+Why: 18% is a relative increase, not one in five. On the U.S.
+lifetime baseline of about 3.9% (NCI SEER, 2021–2023 data),
+3.9% × 1.18 ≈ 4.6%.
+```
+
+The finding underneath survives: processed meat does cause colorectal cancer (IARC, 2015), and the risk rises with the amount eaten. [Full report](/samples/processed-meat.claimcheck.md).
+
 ## A claim that mostly holds (illustrative)
 
 A short post advising LED swaps, citing DOE.

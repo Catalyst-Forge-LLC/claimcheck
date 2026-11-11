@@ -1,7 +1,7 @@
 # Sources behind the worked examples
 
-Checked 2026-11-10. Every figure on the site, in the README, and in
-the sample reports comes from this table or from arithmetic on it.
+Checked 2026-11-10 (water, LED) and 2026-11-11 (processed meat).
+Every figure on the site, in the README, and in the sample reports comes from this table or from arithmetic on it.
 "Read directly" means the primary document was opened. "Via
 transcription" means the figure was read from secondary pages that
 quote the primary text with page numbers; confirm on the primary
@@ -77,3 +77,41 @@ URLs:
 
 - DOE: https://www.energy.gov/sites/prod/files/guide_to_energy_efficient_lighting.pdf
 - EIA: https://www.eia.gov/tools/faqs/faq.php?id=99
+
+## Processed-meat example
+
+| Figure | Value | Year | Source | How read |
+| --- | --- | --- | --- | --- |
+| Classification of processed meat | Group 1, carcinogenic to humans; "sufficient evidence in humans that the consumption of processed meat causes colorectal cancer" | 2015 | IARC Press Release No. 240, 26 October 2015 | Read directly |
+| What a group means | "The IARC classifications describe the strength of the scientific evidence about an agent being a cause of cancer, rather than assessing the level of risk." | 2015 | IARC Monographs Q&A, Volume 114 | Read directly |
+| Same group as tobacco and asbestos | "this does NOT mean that they are all equally dangerous" | 2015 | IARC Monographs Q&A, Volume 114 | Read directly |
+| Dose-response | about 18% higher colorectal cancer risk per 50 g of processed meat eaten daily (analysis of 10 studies) | 2015 | IARC Press Release No. 240; Q&A | Read directly |
+| Individual risk | "remains small, but this risk increases with the amount of meat consumed" | 2015 | IARC Press Release No. 240 | Read directly |
+| Safe level | "the data available for evaluation did not permit a conclusion about whether a safe level exists" | 2015 | IARC Monographs Q&A, Volume 114 | Read directly |
+| Definition of processed meat | salting, curing, fermentation, smoking, or other processes; "may also contain other red meats, poultry, offal, or meat by-products" | 2015 | IARC Press Release No. 240 | Read directly |
+| Cancer deaths attributed to diets high in processed meat | about 34,000 per year worldwide | as cited in 2015 (GBD year not given) | IARC Monographs Q&A, citing the Global Burden of Disease Project | Read directly |
+| Cancer deaths due to tobacco smoking | about 1 million per year worldwide | as cited in 2015 (GBD year not given) | IARC Monographs Q&A, citing the Global Burden of Disease Project | Read directly |
+| Studies considered | more than 800 | 2015 | IARC Press Release No. 240 | Read directly |
+| Hazard vs risk; classification still stated; guideline on animal-source foods in development | — | read 2026-11-11 | WHO Q&A | Read directly |
+| Lifetime risk of colorectal cancer diagnosis, U.S. men and women | approximately 3.9% | 2021–2023 data | NCI SEER Cancer Stat Facts: Colorectal Cancer | Read directly |
+| Lung cancer risk, people who smoke cigarettes vs people who do not | 15 to 30 times | page dated 2026 | CDC, Lung Cancer Risk Factors | Read directly |
+| Processed meat and colorectal cancer | "convincing evidence"; "no level of intake associated with a lack of colorectal cancer risk"; bacon listed as processed meat | read 2026-11-11 | WCRF, Limit consumption of red and processed meat | Read directly |
+
+URLs:
+
+- IARC Press Release No. 240: https://www.iarc.who.int/wp-content/uploads/2018/07/pr240_E.pdf
+- IARC Monographs Q&A, Volume 114: https://www.iarc.who.int/wp-content/uploads/2018/11/Monographs-QA_Vol114.pdf
+- WHO Q&A: https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat
+- NCI SEER: https://seer.cancer.gov/statfacts/html/colorect.html
+- CDC: https://www.cdc.gov/lung-cancer/risk-factors/index.html
+- WCRF: https://www.wcrf.org/research-policy/evidence-for-our-recommendations/limit-red-processed-meat/
+
+Derived:
+
+- Baseline raised by the relative increase: 3.9% × 1.18 ≈ 4.6%. Added risk ≈ 0.7 percentage points, about 7 in 1,000. Shows scale only: the 3.9% is a U.S. average that includes people who already eat processed meat, and the 18% is pooled from other populations.
+- Smoking: 15 to 30 times is an increase of 1,400% to 2,900%.
+- Deaths: 1,000,000 ÷ 34,000 ≈ 29.
+
+Not checked: a newer pooled dose-response estimate (WCRF Continuous
+Update Project), what 50 g is in servings, and the Global Burden of
+Disease year behind the two death figures.

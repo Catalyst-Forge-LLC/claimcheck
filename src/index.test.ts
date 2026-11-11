@@ -91,7 +91,7 @@ function statusesOf(report: string): string[] {
 
 test("sample reports follow the report shape and their score line matches", () => {
 	const sections = ["## Claims read", "## Findings", "## Next steps", "## Unverified", "## A stronger version", "## Sources opened"];
-	for (const name of ["data-center-water", "led-lighting"]) {
+	for (const name of ["data-center-water", "led-lighting", "processed-meat"]) {
 		const report = read("site", "static", "samples", `${name}.claimcheck.md`);
 		let last = -1;
 		for (const section of sections) {

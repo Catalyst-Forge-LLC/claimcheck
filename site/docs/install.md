@@ -100,9 +100,11 @@ Save the claim as `led-lighting.md`, or [download it](/samples/led-lighting.md).
 
 Open `led-lighting.claimcheck.md`. Look for seven findings, recency marked partial, and the source unchanged.
 
-## A harder sample
+## Harder samples
 
 [data-center-water.md](/samples/data-center-water.md) is the worked example: a common sentiment about AI and water, written out as one post. Expect six clear failures and one partial (boundary), a score near `0.5 / 7`, and a **Next steps** list that starts with the local reservoir question. Compare with the [complete sample report](/samples/data-center-water.claimcheck.md).
+
+[processed-meat.md](/samples/processed-meat.md) is a health-risk claim: a common sentiment about processed meat and cancer (“A ham sandwich is as dangerous as smoking”). Expect clear failures on mechanism and magnitude, output marked **N/A**, a score near `2 / 6 (1 N/A)`, and a report that keeps the underlying finding: processed meat does cause colorectal cancer. Compare with the [complete sample report](/samples/processed-meat.claimcheck.md).
 
 ## After the review
 

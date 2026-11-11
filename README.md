@@ -81,7 +81,13 @@ This is a sample report on an illustrative source, not a recorded
 run. [Complete sample report](https://claimcheck.dev/samples/data-center-water.claimcheck.md) ·
 [sources and arithmetic](https://github.com/Catalyst-Forge-LLC/claimcheck/blob/main/docs/sources.md).
 
-A second sample, [led-lighting.claimcheck.md](https://claimcheck.dev/samples/led-lighting.claimcheck.md),
+A second sample, [processed-meat.claimcheck.md](https://claimcheck.dev/samples/processed-meat.claimcheck.md),
+is a health-risk claim: "A ham sandwich is as dangerous as smoking."
+It scores 2 / 6 with one N/A. The underlying finding survives
+(IARC, 2015: processed meat causes colorectal cancer); the post's
+reading of how large the risk is does not.
+
+A third, [led-lighting.claimcheck.md](https://claimcheck.dev/samples/led-lighting.claimcheck.md),
 scores 6 / 7: a sound claim with one superseded figure.
 
 ## First run

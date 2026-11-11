@@ -10,12 +10,14 @@ model run has passed.
 | --- | --- | --- |
 | `data-center-water/` | The worked example. Fails six dimensions, keeps the local concern alive. | 0.5 / 7 |
 | `led-lighting/` | A mostly-passing claim. Partial on recency and evidence only. | 6 / 7 |
+| `processed-meat/` | A health-risk claim. Evidence category read as danger, relative risk read as absolute. The cancer finding survives. One `N/A`. | 2 / 6 (1 N/A) |
 | `loud-but-literate/` | Loud register, literate content. Tone findings are a miss. One `N/A`. | 5 / 6 (1 N/A) |
 
 Every source is an example written for ClaimCheck and opens with
-the word "Example." `data-center-water/claim.md` puts a common
-sentiment into one post: assertions that are widely made and merit
-a more careful check.
+the word "Example." `data-center-water/claim.md` and
+`processed-meat/claim.md` each put a common sentiment into one
+post: assertions that are widely made and merit a more careful
+check.
 
 Wording varies by model. Check statuses and the quoted evidence,
 not exact sentences. A report that invents a number without marking
