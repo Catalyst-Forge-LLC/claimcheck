@@ -11,7 +11,8 @@
 			"items": [
 				{ "id": "introduction", "title": "What it does" },
 				{ "id": "dimensions", "title": "Dimensions" },
-				{ "id": "report", "title": "Report" }
+				{ "id": "report", "title": "Report" },
+				{ "id": "agreement", "title": "Recorded runs" }
 			]
 		}
 	],

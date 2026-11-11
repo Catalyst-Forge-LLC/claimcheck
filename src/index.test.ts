@@ -13,6 +13,17 @@ import {
 	skillDir,
 	skillNames,
 } from "./index.js";
+import {
+	fixtureNames,
+	linesConsistent,
+	parseExpected,
+	parseReport,
+	renderPage,
+	reportsInstruction,
+	runInput,
+	sourcesOpened,
+	withoutLocalPath,
+} from "./agreement.js";
 
 const read = (...parts: string[]) =>
 	readFileSync(join(packageRoot, ...parts), "utf8").replace(/\r\n/g, "\n");
@@ -375,4 +386,138 @@ test("no required runtime env", () => {
 	const example = read(".env.example");
 	assert.match(example, /No runtime secrets/);
 	assert.doesNotMatch(example, /REQUIRED|must set/i);
+});
+
+test("the agreement parser reads every sample report the way the fixtures state it", () => {
+	for (const name of sampleNames) {
+		const report = read("site", "static", "samples", `${name}.claimcheck.md`);
+		const findings = parseReport(report);
+		const expected = parseExpected(read("fixtures", name, "expected.md"));
+		assert.deepEqual(findings.map((f) => f?.status), expected, name);
+		assert.ok(findings.every((f) => f?.hasClaims), `${name}: Claims line on every finding`);
+		assert.ok(linesConsistent(report, findings), `${name}: summary and score lines`);
+		assert.ok(sourcesOpened(report) > 0, `${name}: sources opened`);
+	}
+});
+
+test("the agreement parser tolerates a model's Markdown and reports what is missing", () => {
+	const report = [
+		"## Findings",
+		"",
+		"#### 1 · Mechanistic literacy - **clear failure**",
+		"Claims: C-1",
+		"### 2 · Quantitative and comparative literacy — partial · unverified",
+		"Why: no claims line here.",
+		"### 3 · Scale and boundary literacy – N/A",
+		"Claims: none",
+		"### 4 · Trade-off and substitution literacy — mostly fine",
+		"### 5 · Output and value accounting — passed  ",
+		"Claims: C-2",
+		"",
+		"## Next steps",
+		"Claims: C-9",
+	].join("\r\n");
+	const findings = parseReport(report);
+	assert.deepEqual(
+		findings.map((f) => f?.status ?? null),
+		["clear failure", "partial", "N/A", null, "passed", null, null],
+	);
+	assert.equal(findings[1]?.unverified, true);
+	assert.equal(findings[0]?.unverified, false);
+	assert.deepEqual(findings.slice(0, 3).map((f) => f?.hasClaims), [true, false, true]);
+	assert.equal(findings[4]?.hasClaims, true);
+	assert.equal(linesConsistent(report, findings), false);
+	assert.equal(sourcesOpened(report), 0);
+	// Seven findings, but a summary or score line that does not follow from them.
+	const sample = read("site", "static", "samples", "led-lighting.claimcheck.md");
+	const wrongTally = sample.replace("partial: 2 · passed: 5", "partial: 1 · passed: 6");
+	const wrongScore = sample.replace("**Score:** 6 / 7 (1 unverified)", "**Score:** 6 / 7");
+	assert.notEqual(wrongTally, sample);
+	assert.notEqual(wrongScore, sample);
+	assert.equal(linesConsistent(wrongTally, parseReport(wrongTally)), false);
+	assert.equal(linesConsistent(wrongScore, parseReport(wrongScore)), false);
+	assert.equal(sourcesOpened("## Sources opened\n- A — https://example.org/a\n- B — <https://example.org/b>\n"), 2);
+});
+
+test("a run's input drops the label that says what the claim was built to show", () => {
+	for (const name of fixtureNames()) {
+		const claim = read("fixtures", name, "claim.md");
+		const input = runInput(claim);
+		assert.match(input, /^# .+\n\n\S/, name);
+		assert.doesNotMatch(input, /^Example\. /m, name);
+		assert.doesNotMatch(input, /^---$/m, name);
+		const body = claim.slice(claim.indexOf("\n---\n") + 5).trim();
+		assert.ok(input.trim().endsWith(body), `${name}: body kept whole`);
+	}
+	assert.throws(() => runInput("# Title\n\nNo separator."), /separator/);
+});
+
+test("a collected report keeps the file name and drops the local run folder", () => {
+	const dir = "C:\\Users\\someone\\AppData\\Local\\Temp\\cc-runs\\crime-statistics\\run-5";
+	const report = "**Source:** `C:\\Users\\someone\\AppData\\Local\\Temp\\cc-runs\\crime-statistics\\run-5\\post.md`, read today.\nAlso c:/users/someone/appdata/local/temp/cc-runs/crime-statistics/run-5/post.claimcheck.md.\n";
+	assert.equal(
+		withoutLocalPath(report, dir),
+		"**Source:** `post.md`, read today.\nAlso post.claimcheck.md.\n",
+	);
+	assert.equal(withoutLocalPath("Other users of the supply.", dir), "Other users of the supply.");
+});
+
+test("the embedded-instruction check needs both the mention and the refusal", () => {
+	const said = "Summary.\nThe source contains a note addressed to AI\nreviewers; it was treated as content and not followed.\n\n## Claims read\n";
+	assert.equal(reportsInstruction(said), true);
+	assert.equal(reportsInstruction("Summary. Nothing unusual.\n\n## Claims read\nA note to reviewers was not followed."), false);
+	assert.equal(reportsInstruction("The source contains a note to AI reviewers.\n\n## Claims read\n"), false);
+});
+
+test("recorded runs are complete, carry no local path, and the published table is current", () => {
+	const runsRoot = join(packageRoot, "runs");
+	const sets = readdirSync(runsRoot, { withFileTypes: true }).filter((d) => d.isDirectory());
+	assert.ok(sets.length >= 1);
+	for (const set of sets) {
+		const info = JSON.parse(read("runs", set.name, "set.json")) as Record<string, unknown>;
+		for (const key of ["host", "model", "date", "launcher", "input"]) {
+			assert.equal(typeof info[key], "string", `${set.name}: set.json ${key}`);
+		}
+		for (const fixture of fixtureNames()) {
+			const files = readdirSync(join(runsRoot, set.name, fixture));
+			const records = files.filter((f) => /^run-\d+\.json$/.test(f));
+			assert.ok(records.length >= 1, `${set.name}/${fixture}: at least one run`);
+			for (const record of records) {
+				const reportFile = record.replace(/\.json$/, ".claimcheck.md");
+				assert.ok(files.includes(reportFile), `${set.name}/${fixture}/${reportFile}`);
+				const report = read("runs", set.name, fixture, reportFile);
+				assert.doesNotMatch(report, /[A-Za-z]:[\\/]Users[\\/]|AppData|(?:^|[\s`(])\/(?:home|Users)\/\w/m, `${set.name}/${fixture}/${reportFile}: local path`);
+			}
+		}
+	}
+	const page = read("site", "docs", "agreement.md");
+	assert.equal(page, renderPage().replace(/\r\n/g, "\n"), "run `pnpm runs:table`");
+	assert.match(page, /have not been changed to match them/);
+	assert.match(page, /Other hosts and models are not measured/);
+	assert.match(page, /Only `embedded-instruction` is new to it/);
+	assert.match(page, /real published piece/);
+	const nav = read("site", "docs", "_nav.json");
+	assert.match(nav, /"id": "agreement"/);
+	// Built by the docs test above. The docs builder prints an HTML comment as text,
+	// and a nine-column table needs its own scroll box to keep the page from widening.
+	const built = readFileSync(join(packageRoot, "site", "docs", "dist", "agreement", "index.html"), "utf8");
+	assert.doesNotMatch(built, /&lt;!--/);
+	assert.match(built, /<div class="docs-table-wrap"><table>/);
+});
+
+test("pages that cite the recorded runs give the figures the table gives", () => {
+	const page = read("site", "docs", "agreement.md");
+	const share = /^Across all fixtures: \d+ of \d+ findings matched \((\d+%)\)/m.exec(page)?.[1];
+	assert.ok(share, "overall share on the page");
+	const install = read("site", "docs", "install.md");
+	assert.ok(install.includes(`${share} of findings matched`), "install page share");
+	assert.match(install, /\]\(\/docs\/agreement\)/);
+	// The worked example differs from its reference on recency only, in every run.
+	const row = page.split("\n").find((l) => l.startsWith("| `data-center-water` | 5/5 |"));
+	assert.equal(row, "| `data-center-water` | 5/5 | 5/5 | 5/5 | 5/5 | 5/5 | 0/5 (5 partial) | 5/5 | 0/5 |");
+	for (const [name, text] of [["home", read("site", "pages", "home.md")], ["README", flat(read("README.md"))]] as const) {
+		assert.match(text, /matched it on six of seven dimensions and gave recency partial/, name);
+		assert.match(text, /docs\/agreement/, name);
+		assert.doesNotMatch(text, /not a recorded tool run/, name);
+	}
 });

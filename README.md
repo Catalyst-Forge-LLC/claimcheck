@@ -89,8 +89,11 @@ Five clear failures and two partials. One partial is boundary: the
 post's local reservoir is a real, checkable concern, and the report
 says what a stronger claim would need to settle it. The other is
 the remedy, which names no substitute.
-This is a sample report on an illustrative source, not a recorded
-run. [Complete sample report](https://claimcheck.dev/samples/data-center-water.claimcheck.md) ·
+This is a sample report on an illustrative source, written as the
+reference answer. It is not a recorded run. In five
+[recorded runs](https://claimcheck.dev/docs/agreement) on this claim
+the skill matched it on six of seven dimensions and gave recency
+partial. [Complete sample report](https://claimcheck.dev/samples/data-center-water.claimcheck.md) ·
 [sources and arithmetic](https://github.com/Catalyst-Forge-LLC/claimcheck/blob/main/docs/sources.md).
 
 The mirror claim fails too. [water-rounding-error.claimcheck.md](https://claimcheck.dev/samples/water-rounding-error.claimcheck.md)

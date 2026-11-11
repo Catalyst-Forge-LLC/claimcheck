@@ -125,7 +125,8 @@ function renderMarkdown(md) {
 			}
 			if (rows.length > 0) {
 				const [head, ...body] = rows;
-				html.push('<table><thead><tr>');
+				// The wrapper scrolls a wide table sideways instead of widening the page.
+				html.push('<div class="docs-table-wrap"><table><thead><tr>');
 				for (const c of head) html.push(`<th>${inlineFormat(c)}</th>`);
 				html.push('</tr></thead><tbody>');
 				for (const row of body) {
@@ -133,7 +134,7 @@ function renderMarkdown(md) {
 					for (const c of row) html.push(`<td>${inlineFormat(c)}</td>`);
 					html.push('</tr>');
 				}
-				html.push('</tbody></table>');
+				html.push('</tbody></table></div>');
 			}
 			continue;
 		}

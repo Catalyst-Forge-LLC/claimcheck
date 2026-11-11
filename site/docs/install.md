@@ -87,7 +87,7 @@ The report lands in `led-lighting.claimcheck.md` next to the file.
 
 Success looks like this shape, not identical wording from every model:
 
-- A summary line near `clear failures: 0 · partial: 2 · passed: 5 · N/A: 0`
+- A summary line with no clear failures and one or two partials. [Recorded runs](/docs/agreement) on Cursor came back `clear failures: 0 · partial: 1 · passed: 6 · N/A: 0`. The reference report has `partial: 2 · passed: 5`, because it also counts the 800-lumen line, which the post does not source, under evidence. Either is a correct run
 - A `Claims:` line on every finding, naming the claims it rests on
 - Recency marked **partial**, pointing at the “about 15%” figure (a 2010 DOE guide; EIA’s 2020 survey puts lighting near 6%)
 - No clear failures, and no findings about tone
@@ -156,6 +156,8 @@ Open `led-lighting.claimcheck.md`. Look for seven findings, recency marked parti
 [loud-but-literate.md](/samples/loud-but-literate.md) is a shouting post with sound numbers. Expect four dimensions **passed**, output and recency **partial**, trade-offs **N/A**, and no finding about capital letters or exclamation marks. Compare with the [complete sample report](/samples/loud-but-literate.claimcheck.md).
 
 Statuses can vary from one model or run to the next, most often between **partial** and its neighbors. Check the quoted evidence and the claim ids, not the count.
+
+These expectations are the reference answers. [Recorded runs](/docs/agreement) shows what a model gave on each sample in five runs. On Cursor with a Claude model, 91% of findings matched. Four differed the same way in nearly every run: recency on the worked example came back **partial**, boundary on the crime claim came back **clear failure**, output on the shouting post came back **N/A**, and evidence on the LED claim came back **passed**. The page gives the reason for each.
 
 ## After the review
 

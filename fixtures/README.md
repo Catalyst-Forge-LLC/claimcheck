@@ -48,3 +48,9 @@ ids, and the quoted evidence, not exact sentences. A report that
 invents a number without marking it `unverified` is a miss
 regardless of score. `expected.md` is the reference answer, not a
 record that a model produced it.
+
+What models did produce is in `runs/`: one report per run, copied in
+as written. `pnpm runs:table` compares them with the `expected.md`
+files and writes `site/docs/agreement.md`. Do not edit an
+`expected.md` to raise agreement without saying so on that page:
+it states that the reference answers were written before the runs.

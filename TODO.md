@@ -25,7 +25,10 @@
 - [ ] Real logo (current one is a placeholder mark)
 - [ ] Add ClaimCheck to catalystforge.com/tools (shelf entry, tools.md, tools.json)
 - [ ] Add ClaimCheck to the sibling "when to use which" lines (Smell Check, Cold-eye, TemperPass)
-- [ ] First recorded model run on each fixture; compare with `expected.md`
+- [x] First recorded model run on each fixture; compare with `expected.md`: 35 runs (7 fixtures × 5) on Cursor with Claude Fable 5.2, 2026-11-11, in `runs/cursor-claude-fable-5-2/`; table at `site/docs/agreement.md` (223 of 245 findings matched)
+- [ ] Decide what to do where runs and reference differ the same way every time: `data-center-water` recency (runs: partial), `loud-but-literate` output (runs: N/A), `crime-statistics` boundary (4 of 5 runs: clear failure), `led-lighting` evidence (runs: passed). Changing a reference changes the sample report and, for the worked example, the tally on the home page
+- [ ] Recorded runs on Claude Code, and on a model from another family
+- [ ] A recorded run started by hand in the chat, with the skill found by the host's own discovery
 
 ## Next
 

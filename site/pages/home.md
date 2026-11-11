@@ -30,7 +30,7 @@ order: 0
 <blockquote><p>Boundary — partial. “Out where I live the reservoir is low, and a new data center just went in.” That is a real, checkable concern. Next step: the facility’s water permit, its cooling design, and the reservoir’s drought data.</p></blockquote>
 <p class="example-payoff">The report says which parts fail, which concern survives, and what to read to settle it. It does not rule the claim true or false.</p>
 </section>
-<p class="value-note">Sample report on an illustrative source, not a recorded tool run. Every figure is dated and sourced in the full report.</p>
+<p class="value-note">Sample report on an illustrative source, written as the reference answer. It is not a recorded run. In five recorded runs on this claim the skill matched it on six of seven dimensions and gave recency partial: see <a href="/docs/agreement">recorded runs</a>. Every figure is dated and sourced in the full report.</p>
 <a class="example-download" href="/samples/data-center-water.claimcheck.md">Read the complete sample report →</a>
 </figure>
 </section>
