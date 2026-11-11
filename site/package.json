@@ -25,6 +25,9 @@
 			"esbuild",
 			"getfilepress",
 			"workerd"
-		]
+		],
+		"patchedDependencies": {
+			"getfilepress@0.1.58": "patches/getfilepress@0.1.58.patch"
+		}
 	}
 }

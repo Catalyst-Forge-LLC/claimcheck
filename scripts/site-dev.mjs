@@ -4,7 +4,7 @@
  * Port comes from LocalSlip (`claimcheck-site`). Claim in site/package.json.
  */
 import { spawn, spawnSync } from "node:child_process";
-import { watch } from "node:fs";
+import { existsSync, watch } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,14 +17,13 @@ function run(args, cwd = root) {
 	if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
-const filepress = spawnSync("filepress", ["--help"], {
-	encoding: "utf8",
-	windowsHide: true,
-	shell: process.platform === "win32",
-	stdio: "ignore",
-});
-if (filepress.error || filepress.status === 127) {
-	console.error("filepress is not on PATH. From the repo root: pnpm --dir site install");
+// Run the site's own FilePress. A global `filepress` on PATH is a different
+// version and lacks the patch in site/patches, so it is never a fallback.
+const filepress = join(site, "node_modules", "getfilepress", "scripts", "filepress.mjs");
+if (!existsSync(filepress)) {
+	console.error(
+		"Site dependencies are not installed. From the repo root: pnpm --dir site install",
+	);
 	process.exit(1);
 }
 
@@ -39,9 +38,8 @@ watch(join(site, "theme.css"), () => {
 	}, 200);
 });
 
-const child = spawn("filepress", ["dev", "--host", "0.0.0.0"], {
+const child = spawn(node, [filepress, "dev", "--host", "0.0.0.0"], {
 	cwd: site,
 	stdio: "inherit",
-	shell: process.platform === "win32",
 });
 child.on("exit", (code) => process.exit(code ?? 1));
