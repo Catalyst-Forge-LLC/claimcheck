@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"private": false,
 	"type": "module",
-	"description": "Flag literacy gaps in claims and arguments. An agent with the skill writes a seven-dimension report; the source is left unchanged.",
+	"description": "Find what a claim leaves out. An agent with the skill writes a seven-dimension literacy report on a claim that rests on numbers; the source is left unchanged.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
 	"keywords": [

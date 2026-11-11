@@ -2,7 +2,7 @@
 title: What it does
 ---
 
-**ClaimCheck** is an installable skill for AI agents. Flag literacy gaps in claims and arguments.
+**ClaimCheck** is an installable skill for AI agents. Find what a claim leaves out.
 
 Give it a post, assertion, or short argument that rests on numbers or measurements, on any subject: a resource, a risk, a statistic. An agent reads the skill, runs seven literacy dimensions, and writes a report. Each finding quotes the claim or names what is missing, names the claims it rests on, gets one status, says why, and names the primary source to check next.
 

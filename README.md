@@ -6,15 +6,16 @@
 
 An installable skill for AI agents.
 
-Flag literacy gaps in claims and arguments.
+Find what a claim leaves out.
 
-Does this claim hold up on basic literacy grounds? ClaimCheck gives
-your agent a seven-dimension review for an article, post, assertion,
-or short argument. The agent writes a report that quotes the claim,
-classifies each dimension as **clear failure**, **partial**,
-**passed**, or **N/A**, explains why, and names the primary source to
-check next. The source does not change. Anything the agent could not
-check is marked `unverified` instead of filled in.
+ClaimCheck gives your agent seven questions to ask of a post,
+assertion, or short argument that rests on numbers or measurements.
+The agent writes a report that quotes the claim, classifies each of
+the seven dimensions as **clear failure**, **partial**, **passed**,
+or **N/A**, explains why, and names the primary source to check
+next. The source does not change. The report does not rule the
+claim true or false. Anything the agent could not check is flagged
+`unverified` instead of filled in.
 
 **Get started:** pick the agent, install the skill, then run the
 sample claim at
@@ -140,8 +141,9 @@ not prove the skill loaded: check the agent's skill list, or ask it
 to quote the first heading of `SKILL.md`.
 
 A writable workspace is required. Web access is optional: without
-it, findings that need a primary source are marked `unverified`.
-npm package `getclaimcheck`, skill folder `claimcheck`.
+it, findings that need a primary source are flagged `unverified`.
+Statuses can vary from one model or run to the next. Check the
+quoted evidence, not the count.
 
 ## When to use which
 
@@ -171,7 +173,11 @@ destination the [Get started](https://claimcheck.dev/docs/install)
 page names for your agent.
 
 Updating the npm dependency does not refresh a folder you already
-copied. Copy again after you bump the package.
+copied. Copy again after you bump the package. The installed
+version is in `SKILL_FACTS.md` inside the skill folder.
+
+npm package `getclaimcheck`, skill folder `claimcheck`. The name
+`claimcheck` on npm is an unrelated project.
 
 ## License
 

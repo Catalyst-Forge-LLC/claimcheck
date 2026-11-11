@@ -1,34 +1,34 @@
 ---
-title: "Flag literacy gaps in claims and arguments."
-description: "Does this claim hold up on basic literacy grounds? ClaimCheck gives your AI agent a seven-dimension review for an article, post, or argument. You get a report that quotes the claim, classifies each dimension, and names the primary source to check next. The source stays unchanged."
+title: "ClaimCheck"
+description: "ClaimCheck gives your AI agent seven questions to ask of a post or short argument that rests on numbers. You get a report that quotes the claim, shows what it leaves out, and names the primary source to check next. The source stays unchanged."
 order: 0
 ---
 
 <section class="value-hero" aria-label="ClaimCheck overview">
 <div class="value-intro"><div class="value-headline">
 <p class="value-kind">Review skill for your AI agent</p>
-<h1>Flag literacy gaps in claims and arguments.</h1></div>
-<div class="value-pitch"><p class="value-lede">Does this claim hold up on basic literacy grounds? ClaimCheck gives your AI agent a seven-dimension review for an article, post, or short argument. You get a report that quotes the claim, says which dimensions fail and why, and names the primary source to check next.</p>
+<h1>Find what a claim leaves out.</h1></div>
+<div class="value-pitch"><p class="value-lede">ClaimCheck gives your AI agent seven questions to ask of a post or short argument that rests on numbers: what the number measures, what it is compared with, where its boundary sits, and four more. You get a report that quotes the claim, shows which questions it answers and which it skips, and names the primary source to check next.</p>
 <div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install ClaimCheck</a><a class="cta cta-secondary" href="#one-example-illustrative">See the water example</a></div>
-<p class="value-limit">You receive a Markdown report. The source stays unchanged. Anything your agent could not check is marked unverified, not filled in.</p></div>
+<p class="value-limit">You receive a Markdown report. The source stays unchanged. The report does not rule the claim true or false. Anything your agent could not check is flagged unverified, not filled in.</p></div>
 </div>
 <figure class="value-proof worked-example" id="one-example-illustrative" tabindex="-1">
 <figcaption>From a viral claim to the questions that settle it</figcaption>
 <p class="example-context">A common sentiment about AI and water, and the kind of assertion that merits a more careful check.</p>
 <section class="example-step" aria-labelledby="example-before">
-<h2 id="example-before"><span>1 · The claim</span> Big number, no baseline</h2>
+<h2 id="example-before"><span>The claim</span> Big number, no baseline</h2>
 <blockquote><p>These AI data centers are wasting billions of gallons of water a year — water that is gone forever, boiled off so a machine can write someone’s homework or a bad poem.</p></blockquote>
 </section>
 <section class="example-step example-report" aria-labelledby="example-report">
-<h2 id="example-report"><span>2 · ClaimCheck’s report</span> Two of seven findings</h2>
-<p class="example-file">Excerpt from <code>data-center-water.claimcheck.md</code></p>
+<h2 id="example-report"><span>The report</span> Two of seven findings</h2>
+<p class="example-file">Excerpt from <code>data-center-water.claimcheck.md</code><br>Summary: 5 clear failures · 2 partial · 0 passed · 0 N/A</p>
 <p><strong>1 · Mechanistic literacy — clear failure</strong><br>Evaporative cooling does not boil or destroy water. It evaporates part of the circulating water to carry heat away; the vapor re-enters the hydrologic cycle. That is consumption from the local supply, not destruction.</p>
 <p><strong>2 · Quantitative and comparative literacy — clear failure</strong><br>LBNL: U.S. data centers directly consumed about 66 billion liters (≈ 17.4 billion gallons) in 2023. Set against consumptive use in USGS’s 2020 estimates for the lower 48 states, that is about 0.06% of crop irrigation, 1.1% of public supply, and 2.0% of thermoelectric power. Against water applied on U.S. golf courses in 2020 (GCSAA), about 3.2%. The share depends on the comparison, so the report shows the range.</p>
 </section>
 <section class="example-step example-after" aria-labelledby="example-after">
-<h2 id="example-after"><span>3 · What survives</span> The local question</h2>
+<h2 id="example-after"><span>What survives</span> The local question</h2>
 <blockquote><p>Boundary — partial. “Out where I live the reservoir is low, and a new data center just went in.” That is a real, checkable concern. Next step: the facility’s water permit, its cooling design, and the reservoir’s drought data.</p></blockquote>
-<p class="example-payoff">Five clear failures, two partial. The report says which parts fail, which concern survives, and what to read to settle it. It does not rule the claim true or false.</p>
+<p class="example-payoff">The report says which parts fail, which concern survives, and what to read to settle it. It does not rule the claim true or false.</p>
 </section>
 <p class="value-note">Sample report on an illustrative source, not a recorded tool run. Every figure is dated and sourced in the full report.</p>
 <a class="example-download" href="/samples/data-center-water.claimcheck.md">Read the complete sample report →</a>
@@ -204,6 +204,6 @@ No invented faults. Five dimensions pass and say so. [Full report](/samples/led-
 
 A loud post with sound numbers [passes ClaimCheck](/samples/loud-but-literate.claimcheck.md) and still deserves a Smell Check. A calm post with no denominator fails ClaimCheck and passes Smell Check.
 
-ClaimCheck is a literacy review. It does not rule a claim true or false, and it does not rewrite it.
+ClaimCheck reviews what a claim knows: its literacy on seven dimensions. It does not rule a claim true or false, and it does not rewrite it.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

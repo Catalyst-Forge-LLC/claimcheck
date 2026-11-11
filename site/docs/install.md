@@ -2,9 +2,11 @@
 title: Get started
 ---
 
-Install the skill in your agent, then use it. You do not need Node or npm for this path. Package name on npm: `getclaimcheck`. Installed skill folder: `claimcheck`.
+Install the skill in your agent, then use it. You do not need Node or npm for this path. The installed skill folder is named `claimcheck`.
 
-ClaimCheck writes a report file. A writable workspace is required. Web access is optional: with it, your agent opens the primary sources the report names; without it, those findings are marked `unverified`. Claude.ai without project files is not a supported first-use route.
+ClaimCheck writes a report file, so a writable workspace is required.
+
+Web access is optional, and it changes what the first run shows. With it, your agent opens the primary sources the report names and can check a figure. Without it, those findings are flagged `unverified` and the report says where to check. Cursor and Claude Code can both open web pages when their web tools are turned on and you approve the request. If you are not sure, ask your agent “can you open a web page?” before the first run.
 
 ## Supported hosts
 
@@ -12,8 +14,10 @@ ClaimCheck writes a report file. A writable workspace is required. Web access is
 | --- | --- | --- | --- |
 | Cursor | Project skills folder | Writable workspace | Confirm the skill appears before the first run |
 | Claude Code | Project or `~/.claude/skills/` | Writable workspace | Confirm the skill appears before the first run |
-| Other agents that read `SKILL.md` | Manual copy | Writable workspace | Unverified |
-| Claude.ai | None | Writable project files | Not a supported first-use route without files |
+| Other agents that read `SKILL.md` | Manual copy | Writable workspace | Not tested |
+| Claude.ai chat | Not supported | — | Not tested. The skill needs a folder to load from and a place to write the report, and a plain chat has neither |
+
+If you paste a claim into a chat that has no skill installed, you get the model’s own answer, not a ClaimCheck report: no rubric was loaded, and nothing was written to a file.
 
 A folder on disk is not proof the agent loaded the skill. Prefer the host’s skill list or a visible file-read of `SKILL.md`. A report alone does not prove loading.
 
@@ -30,11 +34,29 @@ Download [claimcheck.zip](/skills/claimcheck.zip).
 
 ### Add it
 
-Unzip it. You should see `SKILL.md` and a `references/` folder.
+The zip holds one folder named `claimcheck`. From the project root, unzip it into `.cursor/skills/`:
 
-Put that folder in the project:
+```bash
+unzip claimcheck.zip -d .cursor/skills/
+```
 
-`.cursor/skills/claimcheck/`
+On Windows PowerShell:
+
+```powershell
+Expand-Archive claimcheck.zip -DestinationPath .cursor\skills\
+```
+
+You should end up with this, and no `claimcheck/claimcheck/`:
+
+```text
+.cursor/skills/claimcheck/
+├── SKILL.md
+├── SKILL_FACTS.md
+└── references/
+    ├── rubric.md
+    ├── report.md
+    └── examples.md
+```
 
 [Install for all projects](#install-for-all-projects) if you want it in every Cursor project.
 
@@ -71,7 +93,7 @@ Success looks like this shape, not identical wording from every model:
 - No clear failures, and no findings about tone
 - The source itself unchanged
 
-Without web access, recency may come back **partial · unverified** with a next step naming EIA’s Residential Energy Consumption Survey. That is a correct run.
+Without web access, recency may come back **partial · unverified** with a next step naming EIA’s Residential Energy Consumption Survey, and the report will not quote the 6% figure. That is a correct run.
 
 ## Claude Code
 
@@ -81,11 +103,31 @@ Download [claimcheck.zip](/skills/claimcheck.zip).
 
 ### Add it
 
-Unzip, then put the folder in the repo:
+The zip holds one folder named `claimcheck`. From the repo root, unzip it into `.claude/skills/`:
 
-`.claude/skills/claimcheck/`
+```bash
+unzip claimcheck.zip -d .claude/skills/
+```
 
-[Install for all projects](#install-for-all-projects) uses `~/.claude/skills/claimcheck/` instead.
+On Windows PowerShell:
+
+```powershell
+Expand-Archive claimcheck.zip -DestinationPath .claude\skills\
+```
+
+You should end up with this, and no `claimcheck/claimcheck/`:
+
+```text
+.claude/skills/claimcheck/
+├── SKILL.md
+├── SKILL_FACTS.md
+└── references/
+    ├── rubric.md
+    ├── report.md
+    └── examples.md
+```
+
+[Install for all projects](#install-for-all-projects) uses `~/.claude/skills/` as the destination instead.
 
 ### Confirm it
 
@@ -121,7 +163,9 @@ There is no apply skill. Read the findings. Edit or answer the source yourself, 
 
 ### Update or remove
 
-Replace the installed `claimcheck` folder to update. Delete that folder to uninstall. Copied skills do not refresh when you bump the npm package `getclaimcheck`.
+To see which version is installed, open `SKILL_FACTS.md` in the installed `claimcheck` folder and read its `version` line. Compare it with the latest version on [npm](https://www.npmjs.com/package/getclaimcheck).
+
+To update, delete the installed `claimcheck` folder and unzip a fresh download in its place. To uninstall, delete the folder. A copied skill does not refresh when you bump the npm package.
 
 ## Other ways to ask
 
@@ -143,15 +187,15 @@ Copy `node_modules/getclaimcheck/skills/claimcheck/` into the same destination y
 
 Updating the npm dependency does not refresh a folder you already copied. Copy again after you bump the package.
 
-Node.js 20+. The package is [`getclaimcheck`](https://www.npmjs.com/package/getclaimcheck) on npm. The name `claimcheck` on npm is a different, unrelated project. The skill folder name is `claimcheck`.
+Node.js 20+. The npm package is [`getclaimcheck`](https://www.npmjs.com/package/getclaimcheck). The name `claimcheck` on npm is a different, unrelated project. The installed skill folder is still named `claimcheck`.
 
 Or clone the [repo](https://github.com/Catalyst-Forge-LLC/claimcheck) and copy `skills/claimcheck/`.
 
 ### Install for all projects
 
-- Cursor: `~/.cursor/skills/claimcheck/`
-- Claude Code: `~/.claude/skills/claimcheck/`
+- Cursor: `unzip claimcheck.zip -d ~/.cursor/skills/`
+- Claude Code: `unzip claimcheck.zip -d ~/.claude/skills/`
 
-Same folder shape. Discovery and first-use checks are the same.
+Same folder shape: `~/.cursor/skills/claimcheck/SKILL.md` or `~/.claude/skills/claimcheck/SKILL.md`. Discovery and first-use checks are the same.
 
 The report shape is on [Report](/docs/report).

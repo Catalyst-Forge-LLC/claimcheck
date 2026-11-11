@@ -324,6 +324,53 @@ test("no public surface names the npm package as claimcheck", () => {
 	assert.equal((JSON.parse(read("package.json")) as { name: string }).name, "getclaimcheck");
 });
 
+test("the headline is the same on every surface and leads with what the reader gets", () => {
+	const headline = "Find what a claim leaves out.";
+	const surfaces: string[][] = [
+		["README.md"],
+		["package.json"],
+		["site", "filepress.config.ts"],
+		["site", "pages", "home.md"],
+		["site", "docs", "introduction.md"],
+		["docs", "smellcheck.md"],
+	];
+	for (const parts of surfaces) {
+		const text = read(...parts);
+		assert.ok(text.includes(headline), parts.join("/"));
+		assert.doesNotMatch(text, /Flag literacy gaps|basic literacy grounds/, parts.join("/"));
+	}
+	const home = read("site", "pages", "home.md");
+	assert.equal((home.match(/<h1>/g) ?? []).length, 1, "one headline in the home page body");
+	// The disclaimer sits in the hero, beside the first tally, not only at the foot of the page.
+	const hero = home.slice(0, home.indexOf("</section>\n\n"));
+	assert.match(hero, /does not rule the claim true or false/);
+	assert.match(hero, /Summary: 5 clear failures · 2 partial/);
+	// Public pages lead with the tally. The fraction stays inside report files.
+	for (const parts of [["README.md"], ["site", "pages", "home.md"], ["site", "pages", "about.md"], ["site", "docs", "install.md"]]) {
+		assert.doesNotMatch(read(...parts), /\*\*Score:\*\*|[Ss]core (?:near|of) `?\d|scores \d/, parts.join("/"));
+	}
+});
+
+test("the SkillFacts label matches the package and names both hosts", () => {
+	const facts = read("skills", "claimcheck", "SKILL_FACTS.md");
+	const version = (JSON.parse(read("package.json")) as { version: string }).version;
+	assert.match(facts, new RegExp(`^version: ${version.replace(/\./g, "\\.")}$`, "m"));
+	assert.match(facts, /^kind: agents-skill$/m);
+	assert.match(facts, /^ {2}network: (none|implied|explicit|undisclosed)$/m);
+	assert.match(facts, /Cursor and Claude Code/);
+	assert.match(facts, /no fixed destinations/);
+});
+
+test("the install page gives one unzip command per host and the expected tree", () => {
+	const install = read("site", "docs", "install.md");
+	assert.match(install, /unzip claimcheck\.zip -d \.cursor\/skills\//);
+	assert.match(install, /unzip claimcheck\.zip -d \.claude\/skills\//);
+	assert.match(install, /no `claimcheck\/claimcheck\/`/);
+	assert.match(install, /SKILL_FACTS\.md/);
+	// The npm name is not in the opening: that path needs neither Node nor npm.
+	assert.doesNotMatch(install.slice(0, install.indexOf("## Supported hosts")), /getclaimcheck/);
+});
+
 test("no required runtime env", () => {
 	const example = read(".env.example");
 	assert.match(example, /No runtime secrets/);

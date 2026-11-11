@@ -5,8 +5,8 @@ const npm = "https://www.npmjs.com/package/getclaimcheck";
 
 export default defineFilepressConfig({
 	title: "ClaimCheck",
-	description: "Does this claim hold up on basic literacy grounds? ClaimCheck gives your AI agent a seven-dimension review for an article, post, or argument. You get a report that quotes the claim, classifies each dimension, and names the primary source to check next. The source stays unchanged.",
-	tagline: "Flag literacy gaps in claims and arguments.",
+	description: "ClaimCheck gives your AI agent seven questions to ask of a post or short argument that rests on numbers. You get a report that quotes the claim, shows what it leaves out, and names the primary source to check next. The source stays unchanged.",
+	tagline: "Find what a claim leaves out.",
 	lede: "Review skill for your AI agent",
 	url: "https://claimcheck.dev",
 	author: "Catalyst Forge LLC",

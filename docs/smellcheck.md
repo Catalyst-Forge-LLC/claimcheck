@@ -12,16 +12,17 @@ Point at `smellcheck` (`Z:/workspace/smellcheck/skills/smellcheck/rules/core.md`
 
 ## Terms that pass here
 
-- **literacy gap** — the product's object. Not "error," not "misinformation."
-- **source / claim / dimension / status / primary source / unverified** — skill vocabulary. Structural.
+- **literacy gap** — the product's object. Not "error," not "misinformation." Keep "literacy" for the dimension names and the docs; the headline and hero say what the reader gets.
+- **source / claim / central claim / side claim / dimension / status / primary source / unverified** — skill vocabulary. Structural.
 - **clear failure / partial / passed / N/A** — status words. Do not clever-synonym them.
-- **withdrawal / consumption / recirculation / destruction** — technical distinctions in the worked example. Not jargon to cut.
+- **withdrawal / consumption / recirculation / destruction**, **hazard / risk**, **reported / occurred** — technical distinctions in the worked examples. Not jargon to cut.
+- **tally** — the count of statuses. Public pages lead with it ("5 clear failures, 2 partial"). The fraction score appears only inside a report file.
 - **Smell Check, TemperPass, Cold-eye, Detangler, shelf** — family. One shelf line per page.
 
 ## Protected lines
 
-- Flag literacy gaps in claims and arguments.
-- Does this claim hold up on basic literacy grounds?
+- Find what a claim leaves out.
+- It does not rule the claim true or false.
 - The source never changes.
 - Classify the claim, not the author.
 - A real concern can survive a failing claim.
