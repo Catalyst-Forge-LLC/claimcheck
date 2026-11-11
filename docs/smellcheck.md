@@ -30,4 +30,5 @@ Point at `smellcheck` (`Z:/workspace/smellcheck/skills/smellcheck/rules/core.md`
 
 - Site copy follows `landing.md`. Max 2 teaching antitheses. Max 1 negation chant.
 - Never present the illustrative water post as a quotation. Every surface that shows it says "illustrative composite."
+- Never name or identify a real author behind an example, including the post that prompted the water example. No name, publication, location, or distinctive phrasing.
 - Every number on a public page carries its year and links to `docs/sources.md` or the sample's Sources opened.
