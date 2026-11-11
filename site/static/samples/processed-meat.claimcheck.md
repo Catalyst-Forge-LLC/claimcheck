@@ -8,25 +8,26 @@ sources listed at the end.
 
 **Source:** `processed-meat.md` (example), read 2026-11-11. Unchanged.
 **Central claim:** > "A ham sandwich is as dangerous as smoking."
-**Summary:** clear failures: 2 · partial: 4 · passed: 0 · N/A: 1
-**Score:** 2 / 6 (1 N/A)
+**Summary:** clear failures: 2 · partial: 5 · passed: 0 · N/A: 0
+**Score:** 2.5 / 7 (1 unverified)
 
 The claim fails on mechanism and magnitude: it reads an evidence
 category as a danger ranking, and a relative increase as an absolute
 risk. The finding underneath is real and survives. Processed meat
 does cause colorectal cancer, and the risk rises with the amount
 eaten. What the post gets wrong is the size of that risk, and what
-its own substitute changes.
+its own substitute changes. This is a literacy review. It does not
+rule the claim true or false.
 
 ## Claims read
 
 - **C-1** > "the World Health Organization has put bacon, ham, and hot dogs in the same cancer category as cigarettes and asbestos."
-- **C-2** > "A ham sandwich is as dangerous as smoking."
+- **C-2** (central) > "A ham sandwich is as dangerous as smoking."
 - **C-3** > "Just 50 grams a day raises your risk of bowel cancer by 18 percent."
 - **C-4** > "That means nearly one in five people who eat the stuff will get cancer from it."
 - **C-5** > "My uncle had bacon every morning of his life and died of colon cancer at 61. I don't need a study to tell me why."
 - **C-6** > "There is no safe amount."
-- **C-7** > "We threw out everything in the fridge and switched to turkey bacon and chicken sausages, and you should too."
+- **C-7** (side claim) > "We threw out everything in the fridge and switched to turkey bacon and chicken sausages, and you should too."
 
 ## Findings
 
@@ -34,6 +35,7 @@ its own substitute changes.
 
 > "in the same cancer category as cigarettes and asbestos" · "A ham sandwich is as dangerous as smoking."
 
+Claims: C-1, C-2
 Why: The first sentence is accurate. IARC, the WHO's cancer agency,
 placed processed meat in Group 1, the group that also holds tobacco
 smoking and asbestos. (Bacon is not among IARC's named examples,
@@ -41,9 +43,8 @@ but it fits the definition, and WCRF lists it.) The second sentence
 misreads what the group does. An IARC group states how strong the evidence is that
 something can cause cancer (a hazard). It does not state how much
 cancer it causes at a given exposure (a risk). Two agents can share
-a group and differ in risk by orders of magnitude. Treating an
-evidence category as a danger ranking is this dimension's failure
-in a health claim.
+a group and differ in risk by orders of magnitude. Treating hazard
+and risk as one thing is this dimension's named failure.
 
 Contrast: IARC's own Q&A (2015) asks this exact question and
 answers: "No, processed meat has been classified in the same
@@ -62,6 +63,7 @@ smoking and asbestos.
 
 > "raises your risk of bowel cancer by 18 percent" · "nearly one in five people who eat the stuff will get cancer from it"
 
+Claims: C-3, C-4
 Why: The 18 percent is a relative increase: 18 percent more than
 whatever the risk was before. The post gives no baseline, then
 restates the figure as an absolute risk of about one in five. Those
@@ -99,6 +101,7 @@ Colorectal Cancer), then apply the relative increase to it.
 
 > "Just 50 grams a day" · "people who eat the stuff" · "My uncle had bacon every morning of his life and died of colon cancer at 61. I don't need a study to tell me why."
 
+Claims: C-3, C-4, C-5
 Why: The first quote keeps the boundary the figure needs: 18% is
 per 50-gram portion eaten daily. The next sentence drops it, and
 the figure becomes true of anyone who eats any amount. It also
@@ -122,15 +125,15 @@ the 10 studies covered.
 
 > "switched to turkey bacon and chicken sausages"
 
+Claims: C-7 (side claim)
 Why: The post names what it eats instead, which is the question
 this dimension asks. It does not check the swap. Processed meat is
 defined by the process, not the animal, and the definition includes
 poultry. Turkey bacon and chicken sausage that are cured, salted,
 or smoked are processed meat under the definition the post relies
 on, so the swap may change nothing about the classification. The
-post also treats the food as only a hazard ("threw out
-everything"), where IARC's own Q&A notes that eating meat has
-health benefits.
+central claim does not depend on the swap, so this finding could
+not go lower than partial.
 
 Contrast: IARC press release (2015): "Processed meat refers to meat
 that has been transformed through salting, curing, fermentation,
@@ -139,8 +142,8 @@ preservation. Most processed meats contain pork or beef, but
 processed meats may also contain other red meats, poultry, offal,
 or meat by-products such as blood." IARC Q&A: "there is not enough
 information to say whether higher or lower cancer risks are related
-to eating any particular type of red meat or processed meat," and
-"Eating meat has known health benefits." WCRF names unprocessed
+to eating any particular type of red meat or processed meat." WCRF
+names unprocessed
 alternatives: "poultry, fish, eggs, and dairy are valuable sources
 of protein and micronutrients." Whether the specific products are
 cured or smoked was not checked in this run.
@@ -148,23 +151,31 @@ cured or smoked was not checked in this run.
 Next step: the label of the substitute product (curing, smoking,
 added nitrite or nitrate), against the IARC definition.
 
-### 5 · Output and value accounting — N/A
+### 5 · Output and value accounting — partial
 
-Absent: any claim about what a use of a resource produces. Nothing
-is called waste.
+Absent: any mention of what the food provides, where the post says
+"We threw out everything in the fridge".
 
-Why: The post argues about a health risk, not about whether a
-resource use is worth its product. What the food provides is a
-substitution question and is covered under 4.
+Claims: C-7 (side claim)
+Why: The post counts the cost of the food and leaves out the
+benefit. It raises the topic by telling readers to throw the food
+out. The central claim is about the size of a risk and would stand
+or fall the same way with the benefit named, so this is partial.
 
-Contrast: not needed.
+Contrast: IARC Q&A (2015), under "Should I stop eating meat?":
+"Eating meat has known health benefits." The same answer says many
+national health recommendations advise people to limit processed
+meat. How large those benefits are for processed meat in particular
+was not checked in this run.
 
-Next step: None.
+Next step: IARC Monographs Q&A, Volume 114, "Should I stop eating
+meat?"; the national dietary guideline for the reader's country.
 
 ### 6 · Recency and updating literacy — partial · unverified
 
 > "It's official: the World Health Organization has put bacon, ham, and hot dogs in the same cancer category"
 
+Claims: C-1, C-3
 Why: The post gives no date and reads as news. The classification
 was announced on 26 October 2015. It has not been withdrawn: WHO's
 current Q&A still states it, and WCRF reaches the same conclusion.
@@ -187,6 +198,7 @@ guideline on animal-source foods, when published.
 
 > "It's official: the World Health Organization" · "There is no safe amount." · "I don't need a study to tell me why."
 
+Claims: C-1, C-5, C-6
 Why: A real primary evaluation stands behind the post, and the post
 names the body. Three things fall short. The evaluation is cited by headline, with no
 document a reader could open. "No safe amount" is attributed to an

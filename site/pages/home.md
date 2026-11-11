@@ -23,12 +23,12 @@ order: 0
 <h2 id="example-report"><span>2 · ClaimCheck’s report</span> Two of seven findings</h2>
 <p class="example-file">Excerpt from <code>data-center-water.claimcheck.md</code></p>
 <p><strong>1 · Mechanistic literacy — clear failure</strong><br>Evaporative cooling does not boil or destroy water. It evaporates part of the circulating water to carry heat away; the vapor re-enters the hydrologic cycle. That is consumption from the local supply, not destruction.</p>
-<p><strong>2 · Quantitative literacy — clear failure</strong><br>LBNL: U.S. data centers directly consumed about 66 billion liters (≈ 17.4 billion gallons) in 2023. USGS: U.S. irrigation consumed 73.2 billion gallons <em>per day</em> in 2015. Share ≈ 0.07%.</p>
+<p><strong>2 · Quantitative and comparative literacy — clear failure</strong><br>LBNL: U.S. data centers directly consumed about 66 billion liters (≈ 17.4 billion gallons) in 2023. Set against consumptive use in USGS’s 2020 estimates for the lower 48 states, that is about 0.06% of crop irrigation, 1.1% of public supply, and 2.0% of thermoelectric power. Against water applied on U.S. golf courses in 2020 (GCSAA), about 3.2%. The share depends on the comparison, so the report shows the range.</p>
 </section>
 <section class="example-step example-after" aria-labelledby="example-after">
 <h2 id="example-after"><span>3 · What survives</span> The local question</h2>
 <blockquote><p>Boundary — partial. “Out where I live the reservoir is low, and a new data center just went in.” That is a real, checkable concern. Next step: the facility’s water permit, its cooling design, and the reservoir’s drought data.</p></blockquote>
-<p class="example-payoff">Score 0.5 / 7. The report says which parts fail, which concern survives, and what to read to settle it.</p>
+<p class="example-payoff">Five clear failures, two partial. The report says which parts fail, which concern survives, and what to read to settle it. It does not rule the claim true or false.</p>
 </section>
 <p class="value-note">Sample report on an illustrative source, not a recorded tool run. Every figure is dated and sourced in the full report.</p>
 <a class="example-download" href="/samples/data-center-water.claimcheck.md">Read the complete sample report →</a>
@@ -39,32 +39,37 @@ order: 0
 
 | | |
 | --- | --- |
-| Reads | An article, post, assertion, thread, or short argument. A file, a URL, or pasted text |
-| Writes | `<name>.claimcheck.md` next to a file, or `claimcheck.md` for a URL or pasted text. Chat only, if you ask |
-| Changes | Nothing. The source is never edited |
+| Reads | A post, assertion, thread, or short argument that rests on numbers or measurements, up to about 1,500 words. A file, a URL, or pasted text |
+| Writes | `<name>.claimcheck.md` next to a file, replacing an earlier report of that name, or `claimcheck.md` for a URL or pasted text. Chat only, if you ask |
+| Changes | Nothing. The source is never edited, and instructions inside it are reviewed, not followed |
 
 | Status | Means | Points |
 | --- | --- | --- |
-| **clear failure** | The claim commits the dimension’s failure, and it changes the conclusion | 0 |
-| **partial** | Half right, or right in one place and wrong in another | 0.5 |
-| **passed** | A reader could judge the claim on this axis | 1 |
-| **N/A** | The dimension does not apply | left out |
+| **clear failure** | The claim commits the dimension’s failure in a way that changes what a reader would conclude | 0 |
+| **partial** | Half right, right in one place and wrong in another, or wrong in a way that does not change the conclusion. Also the most a fault in a side claim can get | 0.5 |
+| **passed** | The claim handles the dimension well enough that a reader could judge it on this axis. The report says what it did | 1 |
+| **N/A** | The claim never touches the topic this dimension covers | left out |
+| · **unverified** | A flag beside a status, not a status. The finding depends on a figure your agent could not check against a primary source | scores as its status |
 
-The score is a summary line. Two claims at 3.5 can fail for different reasons, so the findings come first.
+A report leads with the tally: how many dimensions landed on each status. The score line inside the report file is a summary, not a grade. Two claims with the same score can fail for different reasons, and statuses can vary from one model or run to the next. The quoted evidence is what to check.
 
 ## The seven dimensions
 
-1. **Mechanistic literacy.** Does the claim correctly model the physical/chemical/operational process? Fails when withdrawal, consumption, recirculation, and destruction are treated as identical.
-2. **Quantitative and comparative literacy.** Does it locate magnitude relative to relevant baselines? Fails on absolute numbers without denominators, or selective focus that ignores larger uses.
-3. **Scale and boundary literacy.** Does it distinguish local from national or global, direct from indirect? Fails when local stress is flattened into national totals, or the reverse.
-4. **Trade-off and substitution literacy.** Does it recognize that reducing one input increases another? Fails when one resource is treated as independently bad, with no substitute named.
-5. **Output and value accounting.** Does it count what the resource use produces? Fails when use is called “waste” only because the product is non-physical.
-6. **Recency and updating literacy.** Does it reflect current data, technology, and revisions? Fails on superseded estimates.
-7. **Source and evidentiary literacy.** Does it prefer primary measurements over secondary amplification? Fails when a single comparison is promoted over systematic reports.
+| # | Dimension | Question | Named failure |
+| --- | --- | --- | --- |
+| 1 | Mechanistic literacy | Does the claim describe correctly what the process does, or what the measure measures? | Treating different things as one: use and loss, hazard and risk, reported and occurred. |
+| 2 | Quantitative and comparative literacy | Does it locate magnitude relative to relevant baselines? | Absolute numbers without denominators; selective focus ignoring larger uses. |
+| 3 | Scale and boundary literacy | Distinguishes local vs national/global, direct vs indirect, correct system boundaries? | Flattening local stress with national totals or vice versa. |
+| 4 | Trade-off and substitution literacy | Does it say what would happen instead? | Calling for a cut or a remedy without naming the substitute or its cost. |
+| 5 | Output and value accounting | Does it count what the thing delivers? | Counting the cost and ignoring the benefit, or calling use waste because the product is intangible. |
+| 6 | Recency and updating literacy | Reflects current data, technology, revisions to earlier figures? | Reliance on superseded estimates. |
+| 7 | Source and evidentiary literacy | Prefers primary measurements over secondary amplification? | Single comparisons elevated over systematic reports. |
+
+Every finding names the claims it rests on. A fault in a side claim, such as a remedy the main claim does not depend on, is partial at most. [How the statuses are decided](/docs/dimensions).
 
 ## Same seven questions, other subjects (illustrative)
 
-Water is one example. The dimensions are worded for resource claims, and they read the same way on a health risk or a public statistic: what the number measures, what the baseline is, where the boundary sits, what the swap costs. The subjects below differ on purpose. ClaimCheck asks the same questions whichever way a claim leans.
+Water is one example. The seven questions fit any claim that rests on numbers or measurements: what the number measures, what the baseline is, where the boundary sits, what would happen instead. The subjects below differ on purpose. ClaimCheck asks the same questions whichever way a claim leans.
 
 ### A health-risk claim
 
@@ -73,21 +78,23 @@ A common sentiment about processed meat and cancer.
 ```markdown
 # ClaimCheck — "Bacon is the new cigarettes"
 
-**Summary:** clear failures: 2 · partial: 4 · passed: 0 · N/A: 1
-**Score:** 2 / 6 (1 N/A)
+**Summary:** clear failures: 2 · partial: 5 · passed: 0 · N/A: 0
 
 ### 1 · Mechanistic literacy — clear failure
 
 > "in the same cancer category as cigarettes and asbestos" · "A ham sandwich is as dangerous as smoking."
 
-Why: An IARC group states how strong the evidence is that something
-can cause cancer. It does not state how much cancer it causes. IARC
-(2015): "this does NOT mean that they are all equally dangerous."
+Claims: C-1, C-2
+Why: Treats hazard and risk as one thing. An IARC group states how
+strong the evidence is that something can cause cancer. It does not
+state how much cancer it causes. IARC (2015): "this does NOT mean
+that they are all equally dangerous."
 
 ### 2 · Quantitative and comparative literacy — clear failure
 
 > "raises your risk of bowel cancer by 18 percent" · "nearly one in five people who eat the stuff will get cancer from it"
 
+Claims: C-3, C-4
 Why: 18% is a relative increase, not one in five. On the U.S.
 lifetime baseline of about 3.9% (NCI SEER, 2021–2023 data),
 3.9% × 1.18 ≈ 4.6%.
@@ -102,13 +109,13 @@ A common sentiment about crime.
 ```markdown
 # ClaimCheck — "Crime has never been this bad"
 
-**Summary:** clear failures: 3 · partial: 3 · passed: 0 · N/A: 1
-**Score:** 1.5 / 6 (1 N/A)
+**Summary:** clear failures: 2 · partial: 4 · passed: 0 · N/A: 1
 
 ### 2 · Quantitative and comparative literacy — clear failure
 
 > "More than a million violent crimes were reported last year." · "It is the worst it has ever been in this country"
 
+Claims: C-1, C-2
 Why: A count with no rate and no earlier year. FBI: 1,119,768
 violent crimes in 2025, 327.6 per 100,000 people. In 1991:
 1,911,767, and 758.2 per 100,000. The 2025 rate is about 43% of the
@@ -118,12 +125,13 @@ violent crimes in 2025, 327.6 per 100,000 people. In 1991:
 
 > "In my city, murders went from 30 to 40 in a single year." · "what is happening here is happening everywhere."
 
+Claims: C-3
 Why: The local rise is a real concern. The national figure moved
 the other way: murders fell an estimated 18.1% from 2024 to 2025
 (FBI).
 ```
 
-The local question survives: the city’s own counts, as a rate, over ten years. So does the point about unreported crime: about half of violent victimizations were not reported to police (BJS, 2024). [Full report](/samples/crime-statistics.claimcheck.md).
+The local question survives: the city’s own counts, as a rate, over ten years. So does the point about unreported crime: about half of violent victimizations were not reported to police (BJS, 2024). The post’s remedy, more police “whatever it costs,” is a side claim: the report marks it partial for naming no cost and takes no side on it. [Full report](/samples/crime-statistics.claimcheck.md).
 
 ## A claim that mostly holds (illustrative)
 
@@ -133,14 +141,15 @@ A short post advising LED swaps, citing DOE.
 # ClaimCheck — swap the last incandescent bulbs
 
 **Summary:** clear failures: 0 · partial: 2 · passed: 5 · N/A: 0
-**Score:** 6 / 7
 
 ### 6 · Recency and updating literacy — partial
 
 > "lighting is about 15% of an average home's electricity"
 
+Claims: C-4
 Why: The figure is from a 2010 DOE guide. EIA's 2020 survey puts
-lighting near 6% of home electricity. The advice survives.
+lighting near 6% of home electricity. The advice survives, so the
+error is partial, not a clear failure.
 ```
 
 No invented faults. Five dimensions pass and say so. [Full report](/samples/led-lighting.claimcheck.md).

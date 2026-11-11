@@ -1,7 +1,11 @@
-Injected: three clear failures, three partials, one N/A. A claim
-about public statistics, not a resource claim. Two things in it are
-right, and the report must say so: the local rise is real and
-checkable, and a large share of crime is not reported to police.
+Injected: two clear failures, four partials, one N/A. A claim about
+public statistics. Two things in it are right, and the report must
+say so: the local rise is real and checkable, and a large share of
+crime is not reported to police.
+
+Central claim: "It is the worst it has ever been in this country".
+Side claim: the remedy, "more police on every street, whatever it
+costs".
 
 Catch:
 
@@ -17,9 +21,10 @@ Catch:
 3 · boundary — partial. The city's rise from 30 to 40 is a real
    local concern. "happening everywhere" stretches one city over
    the country, where the national figure moved the other way.
-4 · tradeoff — clear failure. "whatever it costs" declines to price
-   the remedy, and no alternative is named.
-5 · output — N/A. No claim about what a resource use produces.
+4 · tradeoff — partial. "whatever it costs" declines to price the
+   remedy, and no alternative is named. It rests on a side claim,
+   so it is capped at partial.
+5 · output — N/A. The post never touches what a thing delivers.
 6 · recency — partial. "last year" is undated. The count is
    current, but the picture of crime rising fits 2020 to 2022, not
    the latest year.
@@ -27,13 +32,13 @@ Catch:
    says otherwise" stand in for the national datasets, which the
    post dismisses instead of opening.
 
-Score: 1.5 / 6 (1 N/A).
+Score: 2 / 6 (1 N/A).
 
 The report should keep the local question alive: the city's own
 figures, as a rate, over several years. It takes no position on
 policing. It says the remedy is unpriced.
 
 A miss: any finding about tone ("out of control"), a ruling on
-whether more police is good policy, a report that calls the
-under-reporting point false, or one that treats the national fall
-as proof the city's rise is not real.
+whether more police is good policy, a clear failure on trade-offs,
+a report that calls the under-reporting point false, or one that
+treats the national fall as proof the city's rise is not real.

@@ -65,7 +65,8 @@ The report lands in `led-lighting.claimcheck.md` next to the file.
 
 Success looks like this shape, not identical wording from every model:
 
-- A summary line and a score near `6 / 7`
+- A summary line near `clear failures: 0 · partial: 2 · passed: 5 · N/A: 0`
+- A `Claims:` line on every finding, naming the claims it rests on
 - Recency marked **partial**, pointing at the “about 15%” figure (a 2010 DOE guide; EIA’s 2020 survey puts lighting near 6%)
 - No clear failures, and no findings about tone
 - The source itself unchanged
@@ -102,11 +103,13 @@ Open `led-lighting.claimcheck.md`. Look for seven findings, recency marked parti
 
 ## Harder samples
 
-[data-center-water.md](/samples/data-center-water.md) is the worked example: a common sentiment about AI and water, written out as one post. Expect six clear failures and one partial (boundary), a score near `0.5 / 7`, and a **Next steps** list that starts with the local reservoir question. Compare with the [complete sample report](/samples/data-center-water.claimcheck.md).
+[data-center-water.md](/samples/data-center-water.md) is the worked example: a common sentiment about AI and water, written out as one post. Expect five clear failures, two partials (boundary, and trade-offs because the remedy is a side claim), and a **Next steps** list that starts with the local reservoir question. Compare with the [complete sample report](/samples/data-center-water.claimcheck.md).
 
-[processed-meat.md](/samples/processed-meat.md) is a health-risk claim: a common sentiment about processed meat and cancer (“A ham sandwich is as dangerous as smoking”). Expect clear failures on mechanism and magnitude, output marked **N/A**, a score near `2 / 6 (1 N/A)`, and a report that keeps the underlying finding: processed meat does cause colorectal cancer. Compare with the [complete sample report](/samples/processed-meat.claimcheck.md).
+[processed-meat.md](/samples/processed-meat.md) is a health-risk claim: a common sentiment about processed meat and cancer (“A ham sandwich is as dangerous as smoking”). Expect clear failures on mechanism and magnitude, partials on the other five, and a report that keeps the underlying finding: processed meat does cause colorectal cancer. Compare with the [complete sample report](/samples/processed-meat.claimcheck.md).
 
-[crime-statistics.md](/samples/crime-statistics.md) is a claim about public statistics: a common sentiment about crime (“It is the worst it has ever been in this country”). Expect clear failures on magnitude, trade-offs, and evidence, boundary marked **partial** because the writer’s own city is a real concern, output marked **N/A**, and a score near `1.5 / 6 (1 N/A)`. Compare with the [complete sample report](/samples/crime-statistics.claimcheck.md).
+[crime-statistics.md](/samples/crime-statistics.md) is a claim about public statistics: a common sentiment about crime (“It is the worst it has ever been in this country”). Expect clear failures on magnitude and evidence, boundary marked **partial** because the writer’s own city is a real concern, trade-offs marked **partial** because the remedy is a side claim, and output marked **N/A**. Compare with the [complete sample report](/samples/crime-statistics.claimcheck.md).
+
+Statuses can vary from one model or run to the next, most often between **partial** and its neighbors. Check the quoted evidence and the claim ids, not the count.
 
 ## After the review
 

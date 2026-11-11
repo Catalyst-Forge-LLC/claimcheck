@@ -8,24 +8,26 @@ sources listed at the end.
 
 **Source:** `crime-statistics.md` (example), read 2026-11-11. Unchanged.
 **Central claim:** > "It is the worst it has ever been in this country"
-**Summary:** clear failures: 3 · partial: 3 · passed: 0 · N/A: 1
-**Score:** 1.5 / 6 (1 N/A)
+**Summary:** clear failures: 2 · partial: 4 · passed: 0 · N/A: 1
+**Score:** 2 / 6 (1 N/A)
 
-The claim fails on magnitude, trade-offs, and evidence: a count
-with no rate and no earlier year, a remedy with no price, and a
-neighborhood app in place of the national datasets. Two things in
-it are right and survive. The rise in the writer's own city is a
-real, checkable concern, and a large share of crime is never
-reported to police. Neither supports "the worst it has ever been."
+The claim fails on magnitude and evidence: a count with no rate
+and no earlier year, and a neighborhood app in place of the
+national datasets. Its remedy comes with no price, which is a side
+claim and is marked partial. Two things in the post are right and
+survive. The rise in the writer's own city is a real, checkable
+concern, and a large share of crime is never reported to police.
+Neither supports "the worst it has ever been." This is a literacy
+review. It does not rule the claim true or false.
 
 ## Claims read
 
-- **C-1** > "Crime is out of control. It is the worst it has ever been in this country"
+- **C-1** (central) > "Crime is out of control. It is the worst it has ever been in this country"
 - **C-2** > "More than a million violent crimes were reported last year."
 - **C-3** > "In my city, murders went from 30 to 40 in a single year. That is a 33 percent jump, and what is happening here is happening everywhere."
 - **C-4** > "My neighborhood app shows a new break-in or car theft every single day. A few years ago I never saw any of that."
 - **C-5** > "the official numbers can't be trusted anyway, because most crime never gets reported."
-- **C-6** > "The only answer is more police on every street, whatever it costs."
+- **C-6** (side claim) > "The only answer is more police on every street, whatever it costs."
 
 ## Findings
 
@@ -33,8 +35,9 @@ reported to police. Neither supports "the worst it has ever been."
 
 > "the official numbers can't be trusted anyway, because most crime never gets reported."
 
-Why: The process here is how crime gets counted, and the post has
-half of it. The fact is about right: in the national victimization
+Claims: C-5
+Why: The post leans on a measure, the official count, and has
+half of what it measures. The fact is about right: in the national victimization
 survey, roughly half of violent victimizations were not reported to
 police. The conclusion does not follow. The FBI's figures are, by
 design, counts of crime reported to law enforcement, with estimates
@@ -63,6 +66,7 @@ crime.
 
 > "More than a million violent crimes were reported last year." · "It is the worst it has ever been in this country"
 
+Claims: C-1, C-2
 Why: The count is true and tells the reader nothing alone. It has
 no rate (per how many people?) and no earlier year to compare with.
 "The worst it has ever been" is a comparison across time, made
@@ -95,6 +99,7 @@ year, for the full series.
 
 > "In my city, murders went from 30 to 40 in a single year." · "what is happening here is happening everywhere."
 
+Claims: C-3
 Why: The first sentence is the strongest line in the post. A rise
 from 30 to 40 is ten more people killed in one city, and the
 arithmetic is right: 10 ÷ 30 ≈ 33%. The second sentence stretches
@@ -115,16 +120,19 @@ Next step: the city police department's own murder counts for the
 last ten years, and the city's population, to state a rate per
 100,000.
 
-### 4 · Trade-off and substitution literacy — clear failure
+### 4 · Trade-off and substitution literacy — partial
 
 > "The only answer is more police on every street, whatever it costs."
 
+Claims: C-6 (side claim)
 Why: The post names a remedy and declines to price it. "Whatever it
 costs" sets the cost aside in so many words, and "the only answer"
 rules out alternatives without naming one. A post may argue that
 more police are worth the money. To make that argument it has to
-say what the money is and what it would otherwise pay for. This
-finding takes no position on the remedy.
+say what the money is and what it would otherwise pay for. The
+central claim is about how much crime there is and does not depend
+on the remedy, so the finding is capped at partial. It takes no
+position on the remedy.
 
 Contrast: not checked in this run.
 
@@ -133,11 +141,12 @@ officer), and what the city would cut or raise to pay for it.
 
 ### 5 · Output and value accounting — N/A
 
-Absent: any claim about what a use of a resource produces. Nothing
-is called waste.
+Absent: anything the post objects to that delivers a benefit to
+count. Nothing is called waste.
 
-Why: The post is about how much crime there is and what to do about
-it, not about whether a resource use is worth its product.
+Claims: none
+Why: The post is about how much crime there is. It never touches
+what a thing delivers. The cost of its remedy belongs to 4.
 
 Contrast: not needed.
 
@@ -147,6 +156,7 @@ Next step: None.
 
 > "More than a million violent crimes were reported last year." · "A few years ago I never saw any of that."
 
+Claims: C-2, C-4
 Why: "Last year" has no year. The count itself is current: it
 matches the FBI's latest estimate, for 2025. The picture around it
 is not. A sharp rise fits 2020 to 2022, when the murder rate
@@ -170,6 +180,7 @@ releases for the current year.
 
 > "My neighborhood app shows a new break-in or car theft every single day." · "anyone who says otherwise is not paying attention."
 
+Claims: C-1, C-4, C-5
 Why: The evidence offered is a feed of posts and what people say. A
 feed measures how much gets posted and how many neighbors have
 joined. It has no denominator and no earlier year. The systematic
@@ -199,7 +210,8 @@ police department's incident data by area.
    check, and it settles "the worst it has ever been."
 3. **Unreported crime** — BJS *Criminal Victimization, 2024*, the
    tables on reporting to police.
-4. **The price of the remedy** — the city's adopted budget.
+4. **The price of the remedy** — the city's adopted budget. Lowest
+   priority: the central claim does not depend on it.
 
 ## Unverified
 

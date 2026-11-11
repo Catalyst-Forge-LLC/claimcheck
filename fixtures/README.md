@@ -3,24 +3,39 @@
 Claims for trying the skill. Each folder has a `claim.md` source
 and an `expected.md` naming the status each dimension should get and
 why. The skill writes the report; nothing here is a command-line
-corpus, and these are manual behavioral cases, not evidence that a
-model run has passed.
+corpus.
 
-| Folder | What it calibrates | Expected score |
+| Folder | What it calibrates | Expected tally |
 | --- | --- | --- |
-| `data-center-water/` | The worked example. Fails six dimensions, keeps the local concern alive. | 0.5 / 7 |
-| `led-lighting/` | A mostly-passing claim. Partial on recency and evidence only. | 6 / 7 |
-| `processed-meat/` | A health-risk claim. Evidence category read as danger, relative risk read as absolute. The cancer finding survives. One `N/A`. | 2 / 6 (1 N/A) |
-| `crime-statistics/` | A claim about public statistics. A count with no rate or earlier year, one city read as the country, an unpriced remedy. The local rise survives. One `N/A`. | 1.5 / 6 (1 N/A) |
-| `loud-but-literate/` | Loud register, literate content. Tone findings are a miss. One `N/A`. | 5 / 6 (1 N/A) |
+| `data-center-water/` | The worked example. Fails five dimensions, keeps the local concern alive. The remedy is a side claim, so trade-offs is partial. | 5 clear failures, 2 partial |
+| `led-lighting/` | A mostly-passing claim. Partial on recency and evidence only. | 5 passed, 2 partial |
+| `processed-meat/` | A health-risk claim. Hazard read as risk, relative risk read as absolute. The cancer finding survives. | 2 clear failures, 5 partial |
+| `crime-statistics/` | A claim about public statistics. A count with no rate or earlier year, one city read as the country, an unpriced remedy as a side claim. The local rise survives. | 2 clear failures, 4 partial, 1 N/A |
+| `loud-but-literate/` | Loud register, literate content. Tone findings are a miss. | 4 passed, 2 partial, 1 N/A |
+| `embedded-instruction/` | A literate claim with a note telling the reviewer what to rate it and where to write. The note is reported and ignored. | 5 passed, 2 N/A |
+
+## Format of `expected.md`
+
+Tests and the agreement script read these lines, so keep their
+shape:
+
+- `Central claim: …` once, with any side claim named after it.
+- Seven lines `N · <id> — <status>. <why>`, in rubric order, using
+  the ids and status words in
+  `skills/claimcheck/references/rubric.md`. Add ` · unverified`
+  after the status when the published sample carries the flag.
+- `Score: <points> / <applicable> (<n> N/A, <n> unverified).`
+- A closing paragraph naming what counts as a miss.
 
 Every source is an example written for ClaimCheck and opens with
 the word "Example." `data-center-water/claim.md`,
 `processed-meat/claim.md`, and `crime-statistics/claim.md` each put
 a common sentiment into one post: assertions that are widely made
-and merit a more careful check. The three cover different subjects
-on purpose, so no one topic reads as the product's target.
+and merit a more careful check. The subjects differ on purpose, so
+no one topic reads as the product's target.
 
-Wording varies by model. Check statuses and the quoted evidence,
-not exact sentences. A report that invents a number without marking
-it `unverified` is a miss regardless of score.
+Wording varies by model, and so can a status. Check statuses, claim
+ids, and the quoted evidence, not exact sentences. A report that
+invents a number without marking it `unverified` is a miss
+regardless of score. `expected.md` is the reference answer, not a
+record that a model produced it.

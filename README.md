@@ -29,19 +29,26 @@ Claude.ai without project files is not a supported first-use route.
 
 ## The seven dimensions
 
-| # | Dimension | Question | Typical failure |
+| # | Dimension | Question | Named failure |
 | --- | --- | --- | --- |
-| 1 | Mechanistic literacy | Does the claim correctly model the physical/chemical/operational process? | Treating withdrawal/consumption/recirculation/destruction as identical. |
+| 1 | Mechanistic literacy | Does the claim describe correctly what the process does, or what the measure measures? | Treating different things as one: use and loss, hazard and risk, reported and occurred. |
 | 2 | Quantitative and comparative literacy | Does it locate magnitude relative to relevant baselines? | Absolute numbers without denominators; selective focus ignoring larger uses. |
 | 3 | Scale and boundary literacy | Distinguishes local vs national/global, direct vs indirect, correct system boundaries? | Flattening local stress with national totals or vice versa. |
-| 4 | Trade-off and substitution literacy | Recognizes reducing one input increases another? | Treating one resource as independently bad without substitutes. |
-| 5 | Output and value accounting | Incorporates what the resource use produces? | Labeling use "waste" solely because product is non-physical. |
+| 4 | Trade-off and substitution literacy | Does it say what would happen instead? | Calling for a cut or a remedy without naming the substitute or its cost. |
+| 5 | Output and value accounting | Does it count what the thing delivers? | Counting the cost and ignoring the benefit, or calling use waste because the product is intangible. |
 | 6 | Recency and updating literacy | Reflects current data, technology, revisions to earlier figures? | Reliance on superseded estimates. |
 | 7 | Source and evidentiary literacy | Prefers primary measurements over secondary amplification? | Single comparisons elevated over systematic reports. |
 
-Score: passed = 1, partial = 0.5, clear failure = 0, N/A left out of
-the denominator. The score is a summary line. The explanations are
-the product.
+The wording is the rubric's, word for word. It fits any claim that
+rests on numbers or measurements: a resource, a risk, a statistic.
+
+Every finding names the claims it rests on. A report leads with a
+tally ("5 clear failures, 2 partial"). Inside the report file a
+score line follows: passed = 1, partial = 0.5, clear failure = 0,
+N/A left out of the denominator, and the number of `unverified`
+findings beside it. The tally and the score are a summary. The
+explanations are the product. ClaimCheck does not rule a claim true
+or false.
 
 ## Worked example: "AI is drinking our water"
 
@@ -69,32 +76,38 @@ destruction. "Down the drain" is discharge — withdrawn and returned.
 > "billions of gallons of water a year"
 
 Contrast: LBNL puts U.S. data-center direct water consumption at
-66 billion liters (≈ 17.4 billion gallons) in 2023. USGS puts U.S.
-irrigation consumptive use at 73.2 billion gallons per day in 2015
-(≈ 26,700 billion a year). Share ≈ 0.07%.
+66 billion liters (≈ 17.4 billion gallons) in 2023. Against USGS's
+2020 estimates of consumptive use in the lower 48 states, that is
+≈ 0.06% of crop irrigation's, ≈ 1.1% of public supply's, and ≈ 2.0%
+of thermoelectric power's. Against water applied on U.S. golf
+facilities in 2020 (GCSAA), ≈ 3.2%. The share depends on the
+comparison, so the report shows the range.
 ```
 
-Score 0.5 / 7: six clear failures and one partial. The partial is
-boundary: the post's local reservoir is a real, checkable concern,
-and the report says what a stronger claim would need to settle it.
+Five clear failures and two partials. One partial is boundary: the
+post's local reservoir is a real, checkable concern, and the report
+says what a stronger claim would need to settle it. The other is
+the remedy, which names no substitute.
 This is a sample report on an illustrative source, not a recorded
 run. [Complete sample report](https://claimcheck.dev/samples/data-center-water.claimcheck.md) ·
 [sources and arithmetic](https://github.com/Catalyst-Forge-LLC/claimcheck/blob/main/docs/sources.md).
 
 A second sample, [processed-meat.claimcheck.md](https://claimcheck.dev/samples/processed-meat.claimcheck.md),
 is a health-risk claim: "A ham sandwich is as dangerous as smoking."
-It scores 2 / 6 with one N/A. The underlying finding survives
+Two clear failures and five partials. The underlying finding survives
 (IARC, 2015: processed meat causes colorectal cancer); the post's
 reading of how large the risk is does not.
 
 A third, [crime-statistics.claimcheck.md](https://claimcheck.dev/samples/crime-statistics.claimcheck.md),
 is a claim about public statistics: "It is the worst it has ever
-been in this country." It scores 1.5 / 6 with one N/A. The count it
+been in this country." Two clear failures, four partials, and one
+N/A. The count it
 quotes is true (FBI, 2025) and well below 1991; the rise in the
 writer's own city survives as a real, checkable concern.
 
 A fourth, [led-lighting.claimcheck.md](https://claimcheck.dev/samples/led-lighting.claimcheck.md),
-scores 6 / 7: a sound claim with one superseded figure.
+passes five dimensions and is partial on two: a sound claim with
+one superseded figure and one uncited line.
 
 The subjects differ on purpose. ClaimCheck asks the same seven
 questions of any claim, whichever way it leans.

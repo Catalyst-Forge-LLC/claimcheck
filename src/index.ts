@@ -49,9 +49,23 @@ export function score(results: readonly Status[]): { points: number; applicable:
 	return { points: total, applicable, na };
 }
 
-export function formatScore(results: readonly Status[]): string {
+/**
+ * The report's score line. `unverified` is the number of findings that carry
+ * the `unverified` flag; they score as written and are counted beside the score.
+ */
+export function formatScore(results: readonly Status[], unverified = 0): string {
 	const { points: p, applicable, na } = score(results);
-	return na > 0 ? `${p} / ${applicable} (${na} N/A)` : `${p} / ${applicable}`;
+	const notes: string[] = [];
+	if (na > 0) notes.push(`${na} N/A`);
+	if (unverified > 0) notes.push(`${unverified} unverified`);
+	const base = `${p} / ${applicable}`;
+	return notes.length > 0 ? `${base} (${notes.join(", ")})` : base;
+}
+
+/** The report's summary line. The tally comes before the score everywhere. */
+export function formatTally(results: readonly Status[]): string {
+	const count = (status: Status) => results.filter((r) => r === status).length;
+	return `clear failures: ${count("clear failure")} · partial: ${count("partial")} · passed: ${count("passed")} · N/A: ${count("N/A")}`;
 }
 
 export function skillDir(name: SkillName): string {

@@ -5,25 +5,28 @@ example of a common sentiment about AI and water, the kind of
 assertion that merits a more careful check. Figures in **Contrast**
 were checked on 2026-11-10 against the sources listed at the end.
 The LBNL Section 5 water figures were confirmed on the primary PDF
-on 2026-11-11.
+on 2026-11-11, and the USGS baselines were moved to its 2020
+estimates the same day.
 
 **Source:** `data-center-water.md` (example), read 2026-11-10. Unchanged.
 **Central claim:** > "These AI data centers are wasting billions of gallons of water a year — water that is gone forever"
-**Summary:** clear failures: 6 · partial: 1 · passed: 0 · N/A: 0
-**Score:** 0.5 / 7
+**Summary:** clear failures: 5 · partial: 2 · passed: 0 · N/A: 0
+**Score:** 1 / 7
 
-The claim fails on mechanism, magnitude, trade-offs, output,
-recency, and evidence. One concern survives: a new facility drawing
-on a low local reservoir is a real, checkable question. The post
-turns it into a national story without the numbers to carry it.
+The claim fails on mechanism, magnitude, output, recency, and
+evidence. Its remedy names no substitute, which is a side claim and
+is marked partial. One concern survives: a new facility drawing on
+a low local reservoir is a real, checkable question. The post turns
+it into a national story without the numbers to carry it. This is a
+literacy review. It does not rule the claim true or false.
 
 ## Claims read
 
 - **C-1** > "Every time you ask a chatbot a question, a data center somewhere drinks a bottle of water."
 - **C-2** > "I saw it in a graphic going around: a whole bottle for every conversation."
-- **C-3** > "These AI data centers are wasting billions of gallons of water a year — water that is gone forever, boiled off so a machine can write someone's homework or a bad poem."
+- **C-3** (central) > "These AI data centers are wasting billions of gallons of water a year — water that is gone forever, boiled off so a machine can write someone's homework or a bad poem."
 - **C-4** > "Out where I live the reservoir is low, and a new data center just went in. That is what is happening to the whole country."
-- **C-5** > "If these companies actually cared, they would stop using water altogether."
+- **C-5** (side claim) > "If these companies actually cared, they would stop using water altogether."
 - **C-6** > "Nothing useful comes out of those buildings. It's water poured down the drain for nothing."
 
 ## Findings
@@ -32,6 +35,7 @@ turns it into a national story without the numbers to carry it.
 
 > "water that is gone forever, boiled off" · "poured down the drain"
 
+Claims: C-3, C-6
 Why: The post uses three incompatible models for one process.
 Evaporative cooling does not boil water and does not destroy it: it
 evaporates part of the circulating water to carry heat away, and the
@@ -40,8 +44,9 @@ is why it counts as *consumption* from the local supply). "Down the
 drain" describes a third thing — discharge (cooling tower
 blowdown), which is *withdrawn* and returned, not consumed. And
 closed-loop and air-cooled systems recirculate or use no on-site
-water at all. Treating withdrawal, consumption, recirculation, and
-destruction as one act is the dimension's named failure.
+water at all. Withdrawal, consumption, recirculation, and
+destruction are different things. Treating use and loss as one is
+the dimension's named failure.
 
 Contrast: LBNL 2024 describes water-cooled chillers releasing heat
 "via cooling towers" and notes "the water evaporation process in
@@ -64,6 +69,7 @@ the PUE/WUE results — which systems evaporate water, which do not.
 
 > "billions of gallons of water a year" · "Multiply that by millions of people and it's staggering."
 
+Claims: C-1, C-3
 Why: No denominator and no comparison. "Billions of gallons" is
 large next to a bathtub and small next to irrigation; the reader
 cannot tell which. The post singles out one user of water and omits
@@ -74,24 +80,36 @@ Contrast (arithmetic shown; years differ and are named):
 | Use | Figure | Year | Per year | Data-center direct as share |
 | --- | --- | --- | --- | --- |
 | U.S. data centers, direct consumption (LBNL) | 66 billion L ≈ 17.4 Bgal | 2023 | 17.4 Bgal | — |
-| U.S. irrigation, consumptive use (USGS) | 73.2 Bgal/d | 2015 | ≈ 26,700 Bgal | ≈ 0.07% |
-| U.S. thermoelectric power, consumptive use (USGS) | 4.31 Bgal/d | 2015 | ≈ 1,570 Bgal | ≈ 1.1% |
+| Crop irrigation, consumptive use, lower 48 states (USGS) | about 72% of 110,904 Mgal/d ≈ 79,900 Mgal/d | 2020 | ≈ 29,100 Bgal | ≈ 0.06% |
+| Public supply, consumptive use, lower 48 states (USGS) | 4,241 Mgal/d | 2020 | ≈ 1,550 Bgal | ≈ 1.1% |
+| Thermoelectric power, consumptive use of fresh water, lower 48 states (USGS) | 2,359 Mgal/d | 2020 | ≈ 861 Bgal | ≈ 2.0% |
 | U.S. golf facilities, applied water (GCSAA) | 1,686,269 acre-ft × 325,851 gal | 2020 | ≈ 549 Bgal | ≈ 3.2% |
-| U.S. total withdrawals, all uses (USGS) | 322 Bgal/d | 2015 | ≈ 117,500 Bgal | not comparable (withdrawal vs consumption) |
+
+The shares run from about 0.06% to about 3.2%, a factor of roughly
+50, depending on the comparison. A reader shown only the irrigation
+row, or only the golf row, would be shown a selected comparison,
+which is the second half of this dimension's named failure.
 
 Conversions: 66 × 10⁹ L ÷ 3.785 L/gal = 17.4 × 10⁹ gal. Daily
-values × 365. Golf "applied water" is irrigation applied, not
-measured consumption, so that row is an upper-bound comparison. The
-last row is shown only to warn against the common mistake of
-dividing a consumption figure by a withdrawal total.
+values × 365 (1,000 Mgal = 1 Bgal). Irrigation: 0.72 × 110,904 ≈
+79,900 Mgal/d. Limits on these rows: the USGS 2020 values are
+modeled estimates for the lower 48 states, three years older than
+the LBNL figure, which is for the whole country. USGS gives the
+irrigation share as "approximately 72%". Golf "applied water" is
+irrigation applied, not measured consumption, so that row is an
+upper-bound comparison. Do not divide a consumption figure by a
+withdrawal total: in the same USGS data, thermoelectric power
+withdrew 59,889 Mgal/d of fresh water and consumed 3.9% of it.
 
-Next step: USGS Circular 1441, consumptive-use tables; LBNL 2024,
-Section 5, Figure 5.9.
+Next step: USGS water-use pages for irrigation, public supply, and
+thermoelectric power (2020 estimates, consumptive use); LBNL 2024,
+Section 5.
 
 ### 3 · Scale and boundary literacy — partial
 
 > "Out where I live the reservoir is low, and a new data center just went in." · "That is what is happening to the whole country."
 
+Claims: C-4
 Why: The first sentence is the strongest line in the post: a local
 supply under stress and a new local user is exactly the boundary
 where data-center water matters. The second sentence flattens that
@@ -112,17 +130,19 @@ utility service agreement (withdrawal and consumption), its cooling
 design, and the reservoir operator's drought data. For the national
 claim, LBNL Section 5, direct vs indirect tables.
 
-### 4 · Trade-off and substitution literacy — clear failure
+### 4 · Trade-off and substitution literacy — partial
 
 > "If these companies actually cared, they would stop using water altogether."
 
+Claims: C-5 (side claim)
 Why: Waterless cooling exists, but it is a swap, not a free cut.
 Air-cooled and dry systems remove on-site evaporation and raise
 electricity use, and electricity generation consumes water too —
 nationally about 4.35 L per kWh on average, per LBNL. Whether
 switching saves water overall depends on the local grid and climate.
-The post treats water as independently bad and never names the
-substitute.
+The post calls for a cut and never names the substitute or its
+cost. The central claim does not depend on this remedy, so the
+finding is capped at partial.
 
 Contrast: LBNL 2024: "In many cases, there are tradeoffs between low
 PUEs and low site WUEs… While air-cooled chillers use no water, they
@@ -138,6 +158,7 @@ county).
 
 > "so a machine can write someone's homework or a bad poem" · "Nothing useful comes out of those buildings."
 
+Claims: C-3, C-6
 Why: "Waste" is assigned because the product is digital and the
 post's chosen examples are trivial. The same facilities run search,
 email, payments, logistics, hospital records, and scientific
@@ -159,6 +180,7 @@ of output with uses the reader already accepts.
 
 > "a whole bottle for every conversation"
 
+Claims: C-1, C-2
 Why: The "bottle per conversation" line traces to an early academic
 estimate for GPT-3-era models (about 500 mL per 10–50 medium-length
 responses, depending on location and timing, counting both on-site
@@ -185,6 +207,7 @@ Update and search for water.
 
 > "I saw it in a graphic going around"
 
+Claims: C-2
 Why: The only evidence is a secondary graphic of unknown origin. One
 striking per-query comparison is promoted over the systematic
 national report that exists for exactly this question, and the
@@ -204,8 +227,8 @@ the facility's permit or the utility's filing.
    utility agreement, its cooling design, and the reservoir's drought
    status. This is the check that could make the post's strongest
    line true or false.
-2. **USGS Circular 1441 consumptive-use tables** — the baseline for
-   magnitude. Cheapest check.
+2. **USGS water-use pages, 2020 consumptive use by category** — the
+   baseline for magnitude. Cheapest check.
 3. **LBNL 2025 Update** — confirm whether it revises water.
 4. **Li et al. latest version and Google's methodology** — settle the
    per-prompt figure and its scope before quoting any per-query
@@ -216,8 +239,11 @@ the facility's permit or the utility's filing.
 - Whether the LBNL 2025 Update publishes water — two secondary
   summaries say it does not. Check the Update.
 - Any per-service breakdown of data-center water — none found.
-- USGS has not been checked for a national compilation newer than
-  2015 in this run. Check the USGS water-use program page.
+- Whether USGS publishes 2020 estimates for the whole country, not
+  only the lower 48 states — not found on the pages opened. Check
+  the USGS water-use data releases.
+- Whether USGS has estimates newer than 2020 — its pages say work
+  is underway. Check the same pages.
 
 ## A stronger version
 
@@ -234,7 +260,10 @@ and a reader could check it.
 
 - LBNL, *2024 United States Data Center Energy Usage Report* (Shehabi et al., Dec 2024, LBNL-2001637) — https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf — executive summary (176 TWh, 4.4%, 325–580 TWh in 2028), Section 4 cooling systems and the PUE/WUE trade-off quote, and Section 5 water figures (p. 55: "the 66-billion-liter total" for 2023; p. 57: "nearly 800 billion liters", 4.52 and 4.35 L/kWh). Read directly.
 - AWWA, Carpenter & Gonsenhauser, "Utility Planning for Data Centers" — https://doi.org/10.1002/awwa.2515 — 5.6 Bgal (2014) → 17 Bgal (2023) direct; 211 Bgal indirect.
-- USGS Circular 1441, *Estimated Use of Water in the United States in 2015* — https://pubs.usgs.gov/publication/cir1441 — 322 Bgal/d withdrawals; thermoelectric 133 Bgal/d withdrawn, 4.31 Bgal/d consumed; irrigation 118 Bgal/d withdrawn, 73.2 Bgal/d consumed.
+- USGS, "Irrigation Water Use" — https://www.usgs.gov/mission-areas/water-resources/science/irrigation-water-use — 2020, lower 48 states: 110,904 Mgal/d withdrawn for crop irrigation, approximately 72% consumptive; "2020 values are modeled estimates". Read directly.
+- USGS, "Public Supply Water Use" — https://www.usgs.gov/mission-areas/water-resources/science/public-supply-water-use — 2020, lower 48 states: 35,823 Mgal/d withdrawn, about 12% (4,241 Mgal/d) consumptive. Read directly.
+- USGS, "Thermoelectric Power Water Use" — https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use — 2020, lower 48 states: 59,889 Mgal/d of fresh water withdrawn, about 3.9% (2,359 Mgal/d) consumptive. Read directly.
+- USGS Circular 1441, *Estimated Use of Water in the United States in 2015* — https://pubs.usgs.gov/publication/cir1441 — the last compiled national report (2015). Its figures were this report's baseline until the 2020 estimates replaced them.
 - GCSAA, *Golf Course Environmental Profile, Phase III, Vol. I* (2022) — https://www.gcsaa.org/docs/default-source/environment/phase-3-water-survey-full-report.pdf — 1,686,269 acre-feet applied in 2020; 1 acre-foot = 325,851 gal.
 - Li, Yang, Islam, Ren, "Making AI Less 'Thirsty'" — https://arxiv.org/abs/2304.03271 — per-response estimate and its scope (via abstract and search summary).
 - Google, "Measuring the environmental impact of delivering AI at Google Scale" — https://arxiv.org/abs/2508.15734 — 0.26 mL, 0.24 Wh per median Gemini Apps text prompt (via abstract and search summary).

@@ -39,30 +39,45 @@ URLs:
 
 | Figure | Value | Year | Source | How read |
 | --- | --- | --- | --- | --- |
-| U.S. total withdrawals | 322 Bgal/d | 2015 | USGS Circular 1441 | Read directly (abstract) |
-| Thermoelectric withdrawals / consumption | 133 Bgal/d / 4.31 Bgal/d (3%) | 2015 | USGS Circular 1441 | Read directly (abstract) |
-| Irrigation withdrawals / consumption | 118 Bgal/d / 73.2 Bgal/d | 2015 | USGS Circular 1441 | Read directly (abstract) |
-| Public-supply withdrawals | 39.0 Bgal/d | 2015 | USGS Circular 1441 | Read directly (abstract) |
+| Crop irrigation withdrawals, lower 48 states | 110,904 Mgal/d; approximately 72% consumptive | 2020 | USGS, Irrigation Water Use | Read directly (2026-11-11). Modeled estimate |
+| Public supply withdrawals / consumptive use, lower 48 states | 35,823 Mgal/d / 4,241 Mgal/d (about 12%) | 2020 | USGS, Public Supply Water Use | Read directly (2026-11-11). Modeled estimate |
+| Thermoelectric fresh-water withdrawals / consumptive use, lower 48 states | 59,889 Mgal/d / 2,359 Mgal/d (about 3.9%) | 2020 | USGS, Thermoelectric Power Water Use | Read directly (2026-11-11). Modeled estimate |
+| How the 2020 values relate to 2015 | "2020 values are modeled estimates, so the change from 2015 partly reflects different methods." | 2020 | USGS, the three pages above | Read directly (2026-11-11) |
+| U.S. total withdrawals | 322 Bgal/d | 2015 | USGS Circular 1441 | Read directly (abstract). No longer used on a public page |
+| Thermoelectric withdrawals / consumption | 133 Bgal/d / 4.31 Bgal/d (3%) | 2015 | USGS Circular 1441 | Read directly (abstract). Used by the loud-but-literate example |
+| Irrigation withdrawals / consumption | 118 Bgal/d / 73.2 Bgal/d | 2015 | USGS Circular 1441 | Read directly (abstract). Used by the loud-but-literate example |
+| Public-supply withdrawals | 39.0 Bgal/d | 2015 | USGS Circular 1441 | Read directly (abstract). Used by the loud-but-literate example |
 | Golf facilities, applied water | 1,686,269 acre-feet (21% recycled) | 2020 | GCSAA Golf Course Environmental Profile, Phase III Vol. I (2022) | Read directly |
 | Acre-foot | 325,851 gal | — | GCSAA report | Read directly |
 
 URLs:
 
-- USGS: https://pubs.usgs.gov/publication/cir1441
+- USGS, Irrigation Water Use: https://www.usgs.gov/mission-areas/water-resources/science/irrigation-water-use
+- USGS, Public Supply Water Use: https://www.usgs.gov/mission-areas/water-resources/science/public-supply-water-use
+- USGS, Thermoelectric Power Water Use: https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use
+- USGS Circular 1441 (2015): https://pubs.usgs.gov/publication/cir1441
 - GCSAA: https://www.gcsaa.org/docs/default-source/environment/phase-3-water-survey-full-report.pdf
 
 ## Derived numbers (arithmetic)
 
 - 66 × 10⁹ L ÷ 3.785 L/gal ≈ 17.4 × 10⁹ gal. 800 × 10⁹ L ≈ 211 × 10⁹ gal.
-- Irrigation consumption per year: 73.2 × 365 ≈ 26,700 Bgal. Data-center direct share ≈ 17.4 ÷ 26,700 ≈ 0.07%.
-- Thermoelectric consumption per year: 4.31 × 365 ≈ 1,570 Bgal. Share ≈ 1.1%.
+- Data-center direct consumption per day: 17,400 Mgal ÷ 365 ≈ 47.8 Mgal/d.
+- Crop irrigation consumptive use (2020): 0.72 × 110,904 ≈ 79,900 Mgal/d; × 365 ≈ 29,100 Bgal a year. Data-center direct share ≈ 17.4 ÷ 29,100 ≈ 0.06%.
+- Public supply consumptive use (2020): 4,241 Mgal/d × 365 ≈ 1,550 Bgal. Share ≈ 17.4 ÷ 1,550 ≈ 1.1%.
+- Thermoelectric consumptive use of fresh water (2020): 2,359 Mgal/d × 365 ≈ 861 Bgal. Share ≈ 17.4 ÷ 861 ≈ 2.0%.
+- Range of the four shares: 3.2 ÷ 0.06 ≈ 50.
 - Golf applied water: 1,686,269 × 325,851 ≈ 549 Bgal. Share ≈ 3.2%. (Applied, not consumed: upper-bound comparison.)
 - Implied average direct intensity: 66 × 10⁹ L ÷ 176 × 10⁹ kWh ≈ 0.375 L/kWh.
 - Indirect ÷ direct: 800 ÷ 66 ≈ 12.
 - Fully evaporative heat rejection: 3.6 MJ/kWh ÷ ≈2.43 MJ/kg (latent heat of vaporization near 30 °C) ≈ 1.5 L per kWh of heat.
 
-The years differ (2015 USGS, 2020 GCSAA, 2023 LBNL). Every
-comparison on the site names both years.
+The years differ (2020 USGS, 2020 GCSAA, 2023 LBNL), and so do the
+areas: the USGS 2020 estimates cover the lower 48 states, LBNL the
+whole country. Every comparison on the site names both years. The
+water example used USGS's 2015 compilation until 2026-11-11; the
+2020 modeled estimates replaced it because they are newer and give
+consumptive use for public supply, which the 2015 abstract does
+not.
 
 ## LED example
 

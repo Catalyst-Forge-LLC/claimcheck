@@ -6,7 +6,7 @@ version: 0.1.1
 status: active
 license: MIT
 kind: cursor-skill
-purpose: "Literacy-gap review of a claim, post, article, or short argument across seven dimensions. Writes a report; leaves the source unchanged."
+purpose: "Literacy-gap review of a claim, post, or short argument that rests on numbers or measurements, across seven dimensions. Writes a report; leaves the source unchanged."
 homepage: "https://claimcheck.dev"
 repository: "https://github.com/Catalyst-Forge-LLC/claimcheck"
 provenance:
@@ -48,7 +48,7 @@ credits:
 
 ## Purpose
 
-Literacy-gap review of a claim, post, article, or short argument across seven dimensions. Writes a report; leaves the source unchanged.
+Literacy-gap review of a claim, post, or short argument that rests on numbers or measurements, across seven dimensions. Writes a report; leaves the source unchanged.
 
 ## Provenance
 
