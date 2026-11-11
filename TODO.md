@@ -20,7 +20,7 @@
 - [ ] First publish of `getclaimcheck` (Sam publishes). Release contract: package directory is the repo root; version lives in the root `package.json`; build is `pnpm build` (`prepublishOnly` runs `tsc && pnpm test`); README is the root `README.md`. `npm pack --dry-run` on 2026-11-11: `getclaimcheck@0.1.0`, 10 files (`dist/index.js`, `dist/index.d.ts`, `skills/claimcheck/`, `README.md`, `LICENSE`, `package.json`). Until it is published, `pnpm add -D getclaimcheck` in the README and install docs returns 404
 - [x] Enrolled in LocalHelm as `claimcheck` with npm name `getclaimcheck` (2026-11-11)
 - [ ] Create GitHub repo `Catalyst-Forge-LLC/claimcheck`
-- [ ] Confirm LocalSlip lease `claimcheck-site` on 5205 is free
+- [ ] Confirm LocalSlip lease `claimcheck-site` on 5333 is free
 - [ ] Real logo (current one is a placeholder mark)
 - [ ] Add ClaimCheck to catalystforge.com/tools (shelf entry, tools.md, tools.json)
 - [ ] Add ClaimCheck to the sibling "when to use which" lines (Smell Check, Cold-eye, TemperPass)

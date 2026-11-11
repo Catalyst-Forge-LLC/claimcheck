@@ -156,7 +156,7 @@ test("sync writes a zip the install page can download", () => {
 });
 
 test("site dev claims the LocalSlip lease by name", () => {
-	assert.match(read("site", "package.json"), /localslip claim claimcheck-site --port 5205/);
+	assert.match(read("site", "package.json"), /localslip claim claimcheck-site --port 5333/);
 });
 
 test("package tarball lists the skill folder and has no bin", () => {
