@@ -2,7 +2,7 @@
 title: Get started
 ---
 
-Install the skill in your agent, then use it. You do not need Node or npm for this path. Package name on npm: `claimcheck`. Installed skill folder: `claimcheck`.
+Install the skill in your agent, then use it. You do not need Node or npm for this path. Package name on npm: `getclaimcheck`. Installed skill folder: `claimcheck`.
 
 ClaimCheck writes a report file. A writable workspace is required. Web access is optional: with it, your agent opens the primary sources the report names; without it, those findings are marked `unverified`. Claude.ai without project files is not a supported first-use route.
 
@@ -114,7 +114,7 @@ There is no apply skill. Read the findings. Edit or answer the source yourself, 
 
 ### Update or remove
 
-Replace the installed `claimcheck` folder to update. Delete that folder to uninstall. Copied skills do not refresh when you bump the npm package `claimcheck`.
+Replace the installed `claimcheck` folder to update. Delete that folder to uninstall. Copied skills do not refresh when you bump the npm package `getclaimcheck`.
 
 ## Other ways to ask
 
@@ -129,14 +129,14 @@ Once the first run works:
 npm supplies the skill files. It does not register the skill with the agent.
 
 ```bash
-pnpm add -D claimcheck
+pnpm add -D getclaimcheck
 ```
 
-Copy `node_modules/claimcheck/skills/claimcheck/` into the same destination you would use above.
+Copy `node_modules/getclaimcheck/skills/claimcheck/` into the same destination you would use above.
 
 Updating the npm dependency does not refresh a folder you already copied. Copy again after you bump the package.
 
-Node.js 20+. The package is [`claimcheck`](https://www.npmjs.com/package/claimcheck) on npm. The skill folder name is `claimcheck`.
+Node.js 20+. The package is [`getclaimcheck`](https://www.npmjs.com/package/getclaimcheck) on npm. The name `claimcheck` on npm is a different, unrelated project. The skill folder name is `claimcheck`.
 
 Or clone the [repo](https://github.com/Catalyst-Forge-LLC/claimcheck) and copy `skills/claimcheck/`.
 

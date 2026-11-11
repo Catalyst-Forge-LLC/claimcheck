@@ -16,7 +16,9 @@
 - [ ] Confirm whether the LBNL 2025 Update publishes water totals
 - [x] Domain secured: claimcheck.dev (Sam, 2026-11-10)
 - [ ] Create the Cloudflare Pages project `claimcheck` and point claimcheck.dev at it
-- [ ] Confirm the `claimcheck` package name is available on npm (Sam checking)
+- [x] npm package name: `getclaimcheck` (`claimcheck` on npm is another project; `getclaimcheck` was unclaimed on 2026-11-11)
+- [ ] First publish of `getclaimcheck` (Sam publishes). Release contract: package directory is the repo root; version lives in the root `package.json`; build is `pnpm build` (`prepublishOnly` runs `tsc && pnpm test`); README is the root `README.md`. `npm pack --dry-run` on 2026-11-11: `getclaimcheck@0.1.0`, 10 files (`dist/index.js`, `dist/index.d.ts`, `skills/claimcheck/`, `README.md`, `LICENSE`, `package.json`). Until it is published, `pnpm add -D getclaimcheck` in the README and install docs returns 404
+- [x] Enrolled in LocalHelm as `claimcheck` with npm name `getclaimcheck` (2026-11-11)
 - [ ] Create GitHub repo `Catalyst-Forge-LLC/claimcheck`
 - [ ] Confirm LocalSlip lease `claimcheck-site` on 5205 is free
 - [ ] Real logo (current one is a placeholder mark)

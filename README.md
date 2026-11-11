@@ -138,10 +138,10 @@ npm supplies the skill files. It does not register the skill with
 the agent.
 
 ```bash
-pnpm add -D claimcheck
+pnpm add -D getclaimcheck
 ```
 
-Copy `node_modules/claimcheck/skills/claimcheck/` into the same
+Copy `node_modules/getclaimcheck/skills/claimcheck/` into the same
 destination the [Get started](https://claimcheck.dev/docs/install)
 page names for your agent.
 

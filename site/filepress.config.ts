@@ -1,7 +1,7 @@
 import { defineFilepressConfig } from "getfilepress";
 
 const github = "https://github.com/Catalyst-Forge-LLC/claimcheck";
-const npm = "https://www.npmjs.com/package/claimcheck";
+const npm = "https://www.npmjs.com/package/getclaimcheck";
 
 export default defineFilepressConfig({
 	title: "ClaimCheck",
