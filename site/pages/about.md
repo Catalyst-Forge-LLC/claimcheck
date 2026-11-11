@@ -17,7 +17,7 @@ ClaimCheck sits on the shelf with [Smell Check](https://smellcheck.dev) (how a t
 | Layer | Name |
 | --- | --- |
 | Product | ClaimCheck |
-| npm | `claimcheck` |
+| npm | `getclaimcheck` (the name `claimcheck` on npm is an unrelated project) |
 | Skill folder | `claimcheck` |
 | Site | claimcheck.dev |
 | GitHub | [Catalyst-Forge-LLC/claimcheck](https://github.com/Catalyst-Forge-LLC/claimcheck) |

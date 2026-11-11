@@ -3,10 +3,9 @@
 Checked 2026-11-10 (water, LED) and 2026-11-11 (processed meat,
 crime statistics).
 Every figure on the site, in the README, and in the sample reports comes from this table or from arithmetic on it.
-"Read directly" means the primary document was opened. "Via
-transcription" means the figure was read from secondary pages that
-quote the primary text with page numbers; confirm on the primary
-before reusing it.
+"Read directly" means the primary document was opened. A row marked
+"via" a secondary citation, summary, or abstract was not read on
+the primary; confirm it there before reusing it.
 
 ## Data-center water
 
@@ -17,13 +16,13 @@ before reusing it.
 | Air-cooled vs evaporative trade-off | "While air-cooled chillers use no water, they use more energy." | — | LBNL 2024, Section 4 | Read directly |
 | Local-level concern | "the water evaporation process in cooling towers has raised concerns regarding data center water consumption and availability at the local level" | — | LBNL 2024, Table 4.2 | Read directly |
 | Site vs source WUE | site = facility water; source = water to generate the electricity | — | LBNL 2024, Section 4 | Read directly |
-| Direct (on-site) water consumption | 66 billion L (≈ 17.4 billion gal) | 2023 | LBNL 2024, Section 5, p. 55 | Via transcription |
-| Direct water consumption | 21.2 billion L (≈ 5.6 billion gal) | 2014 | LBNL 2024, p. 55 | Via transcription; AWWA gives 5.6 Bgal |
-| Hyperscale + colocation share of direct | 84% | 2023 | LBNL 2024, p. 55 | Via transcription |
-| Hyperscale direct water, scenario range | 60–124 billion L (≈ 15.9–32.8 billion gal) | 2028 | LBNL 2024, pp. 55–56 | Via transcription |
-| All on-site water, scenario range | ≈ 150–280 billion L (≈ 40–74 billion gal) | 2028 | LBNL 2024 as cited by Li et al. (CACM 2025) and AWWA (40–73 Bgal) | Via two secondary citations |
-| Indirect water (power plants) | nearly 800 billion L (≈ 211 billion gal) | 2023 | LBNL 2024, p. 57 | Via transcription; AWWA gives 211 Bgal |
-| Indirect water intensity | 4.52 L/kWh (data centers); 4.35 L/kWh (U.S. average) | 2023 | LBNL 2024, Section 5 | Via transcription |
+| Direct (on-site) water consumption | 66 billion L (≈ 17.4 billion gal) | 2023 | LBNL 2024, Section 5, p. 55 | Read directly (2026-11-11) |
+| Direct water consumption | 21.2 billion L (≈ 5.6 billion gal) | 2014 | LBNL 2024, p. 55 | Read directly (2026-11-11); AWWA gives 5.6 Bgal |
+| Hyperscale + colocation share of direct | 84% | 2023 | LBNL 2024, p. 55 | Read directly (2026-11-11) |
+| Hyperscale direct water, scenario range | 60–124 billion L (≈ 15.9–32.8 billion gal) | 2028 | LBNL 2024, pp. 55–56 | Read directly (2026-11-11) |
+| All on-site water, scenario range | ≈ 150–280 billion L (≈ 40–74 billion gal) | 2028 | LBNL 2024 as cited by Li et al. (CACM 2025) and AWWA (40–73 Bgal) | Via two secondary citations. Not found in the report's text on 2026-11-11 (it may sit in Figure 5.9). Not used on any public page |
+| Indirect water (power plants) | nearly 800 billion L (≈ 211 billion gal) | 2023 | LBNL 2024, p. 57 | Read directly (2026-11-11); AWWA gives 211 Bgal |
+| Indirect water intensity | 4.52 L/kWh (data centers); 4.35 L/kWh (U.S. average) | 2023 | LBNL 2024, Section 5, p. 57 | Read directly (2026-11-11) |
 | LBNL 2025 Update | 192 TWh in 2024; no new national water totals reported | 2024 | LBNL 2025 Update (June 18, 2026) | Via secondary summaries |
 | Per-response estimate | ≈ 500 mL per 10–50 medium-length responses (GPT-3; on-site + power-plant water) | 2023 | Li, Yang, Islam, Ren, arXiv 2304.03271; CACM 2025 | Via abstract and search summary |
 | Per-prompt operator disclosure | 0.26 mL water, 0.24 Wh, median Gemini Apps text prompt | May 2025 data | Google, arXiv 2508.15734 | Via abstract and search summary |
@@ -31,7 +30,6 @@ before reusing it.
 URLs:
 
 - LBNL 2024: https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf (LBNL-2001637)
-- Transcriptions: https://datacentercensus.com/water-and-power · https://research.californiacompute.org/wiki/sources/lbnl-2024-us-data-center-energy-usage-report/
 - AWWA: https://doi.org/10.1002/awwa.2515
 - LBNL 2025 Update: https://escholarship.org/uc/item/33m6w3x0 · https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update
 - Li et al.: https://arxiv.org/abs/2304.03271

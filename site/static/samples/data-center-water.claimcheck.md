@@ -3,9 +3,9 @@
 Worked sample, written to show the report format. The source is an
 example of a common sentiment about AI and water, the kind of
 assertion that merits a more careful check. Figures in **Contrast**
-were checked on 2026-11-10 against the sources listed at the end. Where a figure was read
-through a secondary transcription rather than the primary PDF page,
-the finding says so.
+were checked on 2026-11-10 against the sources listed at the end.
+The LBNL Section 5 water figures were confirmed on the primary PDF
+on 2026-11-11.
 
 **Source:** `data-center-water.md` (example), read 2026-11-10. Unchanged.
 **Central claim:** > "These AI data centers are wasting billions of gallons of water a year — water that is gone forever"
@@ -104,9 +104,8 @@ different watersheds.
 Contrast: LBNL 2024 puts indirect water for U.S. data centers in
 2023 at "nearly 800 billion liters" (≈ 211 Bgal), about 12× the
 66-billion-liter direct figure (800 ÷ 66 ≈ 12.1), and says the
-indirect estimate depends on the local grid mix. *Read via secondary
-transcriptions quoting Section 5 (pp. 55–57); the direct PDF fetch
-in this run truncated before Section 5.*
+indirect estimate depends on the local grid mix. (Section 5, pp. 55
+and 57, read directly.)
 
 Next step: for the local claim, the facility's water permit or
 utility service agreement (withdrawal and consumption), its cooling
@@ -127,9 +126,9 @@ substitute.
 
 Contrast: LBNL 2024: "In many cases, there are tradeoffs between low
 PUEs and low site WUEs… While air-cooled chillers use no water, they
-use more energy." (Read directly, Section 4.) The 4.35 L/kWh U.S.
-average and 4.52 L/kWh for data-center electricity are from Section
-5, read via secondary transcription.
+use more energy." (Section 4.) The 4.35 L/kWh U.S. average and
+4.52 L/kWh for data-center electricity are from Section 5, p. 57.
+Both read directly.
 
 Next step: LBNL 2024, Section 4 "PUE and WUE Results"; for a given
 site, the grid's water-intensity factor (LBNL Figure 5.10 maps it by
@@ -205,28 +204,15 @@ the facility's permit or the utility's filing.
    utility agreement, its cooling design, and the reservoir's drought
    status. This is the check that could make the post's strongest
    line true or false.
-2. **Confirm LBNL Section 5 on the primary PDF** (pp. 55–57): 66
-   billion L direct (2023), ~800 billion L indirect, 4.35 and 4.52
-   L/kWh, the 2028 scenario ranges. Cheapest check, used by four
-   findings.
-3. **USGS Circular 1441 consumptive-use tables** — the baseline for
-   magnitude.
-4. **LBNL 2025 Update** — confirm whether it revises water.
-5. **Li et al. latest version and Google's methodology** — settle the
+2. **USGS Circular 1441 consumptive-use tables** — the baseline for
+   magnitude. Cheapest check.
+3. **LBNL 2025 Update** — confirm whether it revises water.
+4. **Li et al. latest version and Google's methodology** — settle the
    per-prompt figure and its scope before quoting any per-query
    number.
 
 ## Unverified
 
-- LBNL Section 5 figures (66 billion L, ~800 billion L, 4.35 / 4.52
-  L/kWh, 21.2 billion L in 2014, hyperscale 60–124 billion L in 2028,
-  total on-site 150–280 billion L in 2028) — read through consistent
-  secondary transcriptions that quote the report with page numbers;
-  the primary PDF fetch in this run truncated before Section 5. Check
-  LBNL-2001637 pp. 55–57.
-- Note one inconsistency in secondary coverage: The Conversation
-  gives the 2023 direct figure as "64 billion liters"; the report's
-  quoted text says 66. Use the report.
 - Whether the LBNL 2025 Update publishes water — two secondary
   summaries say it does not. Check the Update.
 - Any per-service breakdown of data-center water — none found.
@@ -246,8 +232,7 @@ and a reader could check it.
 
 ## Sources opened
 
-- LBNL, *2024 United States Data Center Energy Usage Report* (Shehabi et al., Dec 2024, LBNL-2001637) — https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf — executive summary (176 TWh, 4.4%, 325–580 TWh in 2028), Section 4 cooling systems and the PUE/WUE trade-off quote, read directly.
-- Section 5 water figures as transcribed with page references by Data Center Census (https://datacentercensus.com/water-and-power) and CalCompute Research Library (https://research.californiacompute.org/wiki/sources/lbnl-2024-us-data-center-energy-usage-report/) — secondary; see Unverified.
+- LBNL, *2024 United States Data Center Energy Usage Report* (Shehabi et al., Dec 2024, LBNL-2001637) — https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf — executive summary (176 TWh, 4.4%, 325–580 TWh in 2028), Section 4 cooling systems and the PUE/WUE trade-off quote, and Section 5 water figures (p. 55: "the 66-billion-liter total" for 2023; p. 57: "nearly 800 billion liters", 4.52 and 4.35 L/kWh). Read directly.
 - AWWA, Carpenter & Gonsenhauser, "Utility Planning for Data Centers" — https://doi.org/10.1002/awwa.2515 — 5.6 Bgal (2014) → 17 Bgal (2023) direct; 211 Bgal indirect.
 - USGS Circular 1441, *Estimated Use of Water in the United States in 2015* — https://pubs.usgs.gov/publication/cir1441 — 322 Bgal/d withdrawals; thermoelectric 133 Bgal/d withdrawn, 4.31 Bgal/d consumed; irrigation 118 Bgal/d withdrawn, 73.2 Bgal/d consumed.
 - GCSAA, *Golf Course Environmental Profile, Phase III, Vol. I* (2022) — https://www.gcsaa.org/docs/default-source/environment/phase-3-water-survey-full-report.pdf — 1,686,269 acre-feet applied in 2020; 1 acre-foot = 325,851 gal.

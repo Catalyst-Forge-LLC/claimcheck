@@ -104,8 +104,8 @@ change in a count this small also needs more than two years of
 data before it is a trend.
 
 Contrast: FBI, *UCR Summary, 2025*: murder and nonnegligent
-manslaughter decreased an estimated 18.1% nationwide from 2024 to
-2025. In the comparison by population group, "no population group
+manslaughter offenses decreased an estimated 18.1% nationwide from
+2024 to 2025. That is the change in the count; the rate fell 18.5%. In the comparison by population group, "no population group
 designated within 'CIUS, 2025' showed an increase in the
 year-to-year violent crime trend," and murder fell in every group,
 by 9.2% to 27.4%. A group average does not rule out a rise in one

@@ -116,7 +116,7 @@ to quote the first heading of `SKILL.md`.
 
 A writable workspace is required. Web access is optional: without
 it, findings that need a primary source are marked `unverified`.
-Package `claimcheck`, skill folder `claimcheck`.
+npm package `getclaimcheck`, skill folder `claimcheck`.
 
 ## When to use which
 

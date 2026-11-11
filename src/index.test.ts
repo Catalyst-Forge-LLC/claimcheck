@@ -174,6 +174,37 @@ test("package tarball lists the skill folder and has no bin", () => {
 	assert.doesNotMatch(out, /fixtures\//);
 });
 
+test("no public surface names the npm package as claimcheck", () => {
+	// `claimcheck` on npm is an unrelated project. The package is `getclaimcheck`.
+	const surfaces: string[][] = [
+		["README.md"],
+		["site", "filepress.config.ts"],
+		["site", "scripts", "build-docs.mjs"],
+		["skills", "claimcheck", "SKILL.md"],
+		["skills", "claimcheck", "SKILL_FACTS.md"],
+	];
+	for (const dir of [["site", "pages"], ["site", "docs"], ["site", "posts"]]) {
+		for (const file of readdirSync(join(packageRoot, ...dir))) {
+			if (file.endsWith(".md")) surfaces.push([...dir, file]);
+		}
+	}
+	const wrong = [
+		/npmjs\.com\/package\/claimcheck\b/,
+		/\b(?:pnpm|npm|yarn|bun) (?:add|install|i)(?: -\S+)* claimcheck\b/,
+		/\bnpx claimcheck\b/,
+		/node_modules\/claimcheck\//,
+		/\bnpm \| `claimcheck`/,
+		/\b[Pp]ackage `claimcheck`/,
+		/\bnpm package `claimcheck`/,
+		/\bpackage is \[?`claimcheck`/,
+	];
+	for (const parts of surfaces) {
+		const text = read(...parts);
+		for (const pattern of wrong) assert.doesNotMatch(text, pattern, parts.join("/"));
+	}
+	assert.equal((JSON.parse(read("package.json")) as { name: string }).name, "getclaimcheck");
+});
+
 test("no required runtime env", () => {
 	const example = read(".env.example");
 	assert.match(example, /No runtime secrets/);
