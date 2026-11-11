@@ -1,6 +1,6 @@
 # ClaimCheck Smell Check overlay
 
-Point at `smellcheck` (`Z:/workspace/smellcheck/skills/smellcheck/rules/core.md`). Do not fork core.
+Point at the `smellcheck` skill's core rules (`skills/smellcheck/rules/core.md` in the Smell Check repo). Do not fork core.
 
 ## Pronouns
 
@@ -31,5 +31,6 @@ Point at `smellcheck` (`Z:/workspace/smellcheck/skills/smellcheck/rules/core.md`
 
 - Site copy follows `landing.md`. Max 2 teaching antitheses. Max 1 negation chant.
 - Introduce an example claim as a common sentiment or assertion that merits a more careful check. Do not attribute it to anyone, and do not add disclaimers such as "not a quotation of any author."
-- Never name or identify a real author behind an example, including the post that prompted the water example. No name, publication, location, or distinctive phrasing.
+- Never name or identify a real author behind an example. No name, publication, location, or distinctive phrasing.
+- Recorded runs (`runs/`) use the sample claims in `fixtures/` only. Do not publish a run on a real published piece.
 - Every number on a public page carries its year and links to `docs/sources.md` or the sample's Sources opened.

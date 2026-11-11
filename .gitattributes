@@ -1,0 +1,3 @@
+# LF in the repo and in every checkout, so the shebang in scripts/*.mjs
+# works on Unix and diffs do not flip line endings between machines.
+* text=auto eol=lf
