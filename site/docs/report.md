@@ -31,4 +31,4 @@ Next step: the facility's water permit, its cooling design, the reservoir's drou
 
 Numbers in a report are quoted from the source, quoted from a primary source opened in that run, or derived by arithmetic the report shows. Anything else is `unverified`.
 
-Samples: [data-center-water.claimcheck.md](/samples/data-center-water.claimcheck.md) (0.5 / 7), [processed-meat.claimcheck.md](/samples/processed-meat.claimcheck.md) (2 / 6, 1 N/A), and [led-lighting.claimcheck.md](/samples/led-lighting.claimcheck.md) (6 / 7).
+Samples: [data-center-water.claimcheck.md](/samples/data-center-water.claimcheck.md) (0.5 / 7), [processed-meat.claimcheck.md](/samples/processed-meat.claimcheck.md) (2 / 6, 1 N/A), [crime-statistics.claimcheck.md](/samples/crime-statistics.claimcheck.md) (1.5 / 6, 1 N/A), and [led-lighting.claimcheck.md](/samples/led-lighting.claimcheck.md) (6 / 7).

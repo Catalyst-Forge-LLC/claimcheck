@@ -87,8 +87,17 @@ It scores 2 / 6 with one N/A. The underlying finding survives
 (IARC, 2015: processed meat causes colorectal cancer); the post's
 reading of how large the risk is does not.
 
-A third, [led-lighting.claimcheck.md](https://claimcheck.dev/samples/led-lighting.claimcheck.md),
+A third, [crime-statistics.claimcheck.md](https://claimcheck.dev/samples/crime-statistics.claimcheck.md),
+is a claim about public statistics: "It is the worst it has ever
+been in this country." It scores 1.5 / 6 with one N/A. The count it
+quotes is true (FBI, 2025) and well below 1991; the rise in the
+writer's own city survives as a real, checkable concern.
+
+A fourth, [led-lighting.claimcheck.md](https://claimcheck.dev/samples/led-lighting.claimcheck.md),
 scores 6 / 7: a sound claim with one superseded figure.
+
+The subjects differ on purpose. ClaimCheck asks the same seven
+questions of any claim, whichever way it leans.
 
 ## First run
 

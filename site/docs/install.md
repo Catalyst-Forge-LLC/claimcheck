@@ -106,6 +106,8 @@ Open `led-lighting.claimcheck.md`. Look for seven findings, recency marked parti
 
 [processed-meat.md](/samples/processed-meat.md) is a health-risk claim: a common sentiment about processed meat and cancer (“A ham sandwich is as dangerous as smoking”). Expect clear failures on mechanism and magnitude, output marked **N/A**, a score near `2 / 6 (1 N/A)`, and a report that keeps the underlying finding: processed meat does cause colorectal cancer. Compare with the [complete sample report](/samples/processed-meat.claimcheck.md).
 
+[crime-statistics.md](/samples/crime-statistics.md) is a claim about public statistics: a common sentiment about crime (“It is the worst it has ever been in this country”). Expect clear failures on magnitude, trade-offs, and evidence, boundary marked **partial** because the writer’s own city is a real concern, output marked **N/A**, and a score near `1.5 / 6 (1 N/A)`. Compare with the [complete sample report](/samples/crime-statistics.claimcheck.md).
+
 ## After the review
 
 There is no apply skill. Read the findings. Edit or answer the source yourself, or ask your agent for a named follow-up outside this skill.

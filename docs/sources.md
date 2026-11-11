@@ -1,6 +1,7 @@
 # Sources behind the worked examples
 
-Checked 2026-11-10 (water, LED) and 2026-11-11 (processed meat).
+Checked 2026-11-10 (water, LED) and 2026-11-11 (processed meat,
+crime statistics).
 Every figure on the site, in the README, and in the sample reports comes from this table or from arithmetic on it.
 "Read directly" means the primary document was opened. "Via
 transcription" means the figure was read from secondary pages that
@@ -115,3 +116,45 @@ Derived:
 Not checked: a newer pooled dose-response estimate (WCRF Continuous
 Update Project), what 50 g is in servings, and the Global Burden of
 Disease year behind the two death figures.
+
+## Crime-statistics example
+
+| Figure | Value | Year | Source | How read |
+| --- | --- | --- | --- | --- |
+| Violent crimes, estimated | 1,119,768 | 2025 | FBI, UCR Summary of Reported Crimes in the Nation, 2025 (released August 2026) | Read directly |
+| Violent crime rate | 327.6 per 100,000 inhabitants | 2025 | FBI, UCR Summary 2025 | Read directly |
+| Violent crime rate | 362.9 per 100,000 inhabitants (updated) | 2024 | FBI, UCR Summary 2025 | Read directly |
+| Change in violent crime rate | −9.7%, the largest year-to-year decrease since estimates began in 1936 | 2024 to 2025 | FBI, UCR Summary 2025 | Read directly |
+| Change in estimated offenses | violent crime −9.3%; murder −18.1%; burglary −15.8%; motor vehicle theft −22.7% | 2024 to 2025 | FBI, UCR Summary 2025 | Read directly |
+| Murder rate | 4.1 per 100,000, tied with 1955 and 1956 for the lowest since 1936 | 2025 | FBI, UCR Summary 2025 | Read directly |
+| Murder rate, 20-year high | 6.6 per 100,000 | 2020 and 2022 | FBI, UCR Summary 2025, Figure 1 | Read directly |
+| Murder trend by population group | down in every group, −9.2% to −27.4%; no group showed a rise in violent crime | 2024 to 2025 | FBI, UCR Summary 2025, Table 4 | Read directly |
+| Agency coverage | 17,075 agencies, 96.2% of population | 2025 | FBI, UCR Summary 2025 | Read directly |
+| Preliminary violent crime | −10.6% | January–June 2026 vs same months 2025 | FBI, UCR Summary 2025 | Read directly |
+| Violent crimes, estimated | 1,911,767; rate 758.2 per 100,000; murder rate 9.8 | 1991 | FBI, Crime in the United States 2010, Table 1 | Read directly |
+| Revised rape definition | adopted 2013; violent crime estimates for 2013 onward use it | — | FBI press release, August 5, 2025; UCR Summary 2025 | Read directly |
+| Violent victimizations | 23.3 per 1,000 persons age 12 or older | 2024 | BJS, Criminal Victimization, 2024 (September 2025) | Highlights read directly |
+| Violent victimizations reported to police | 11.2 per 1,000 persons age 12 or older | 2024 | BJS, Criminal Victimization, 2024 | Highlights read directly |
+
+URLs:
+
+- FBI UCR Summary 2025: https://cde.ucr.cjis.gov/LATEST/resources/reports/UCR_Summary_of_Reported_Crimes_in_the_Nation_2025.pdf
+- FBI CIUS 2010, Table 1: https://ucr.fbi.gov/crime-in-the-u.s/2010/crime-in-the-u.s.-2010/tables/10tbl01.xls
+- FBI press release, 2024 statistics: https://www.fbi.gov/news/press-releases/fbi-releases-2024-reported-crimes-in-the-nation-statistics
+- BJS: https://bjs.ojp.gov/library/publications/criminal-victimization-2024
+
+Derived:
+
+- 2025 count as a share of 1991: 1,119,768 ÷ 1,911,767 ≈ 59%.
+- 2025 rate as a share of 1991: 327.6 ÷ 758.2 ≈ 43%. Murder rate: 4.1 ÷ 9.8 ≈ 42%.
+- Share of violent victimizations reported to police: 11.2 ÷ 23.3 ≈ 48%; not reported ≈ 52%.
+- The post's own figure: (40 − 30) ÷ 30 ≈ 33%.
+
+Not checked: FBI rates before 1991 (so 1991 is the highest in the
+table opened, not a confirmed record), the share of property crime
+not reported to police, and whether BJS has published 2025
+victimization estimates. The 1991 and 2025 totals use different
+rape definitions; the comparison is approximate. The FBI and BJS
+figures count different things (police-reported serious violent
+crime; survey-reported nonfatal violent crime including simple
+assault).

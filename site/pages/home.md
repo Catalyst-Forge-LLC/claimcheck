@@ -62,9 +62,13 @@ The score is a summary line. Two claims at 3.5 can fail for different reasons, s
 6. **Recency and updating literacy.** Does it reflect current data, technology, and revisions? Fails on superseded estimates.
 7. **Source and evidentiary literacy.** Does it prefer primary measurements over secondary amplification? Fails when a single comparison is promoted over systematic reports.
 
-## A health claim, same seven questions (illustrative)
+## Same seven questions, other subjects (illustrative)
 
-A common sentiment about processed meat and cancer. The dimensions are worded for resource claims. They read the same way on a risk claim: what the category measures, what the baseline is, what the swap changes.
+Water is one example. The dimensions are worded for resource claims, and they read the same way on a health risk or a public statistic: what the number measures, what the baseline is, where the boundary sits, what the swap costs. The subjects below differ on purpose. ClaimCheck asks the same questions whichever way a claim leans.
+
+### A health-risk claim
+
+A common sentiment about processed meat and cancer.
 
 ```markdown
 # ClaimCheck — "Bacon is the new cigarettes"
@@ -90,6 +94,36 @@ lifetime baseline of about 3.9% (NCI SEER, 2021–2023 data),
 ```
 
 The finding underneath survives: processed meat does cause colorectal cancer (IARC, 2015), and the risk rises with the amount eaten. [Full report](/samples/processed-meat.claimcheck.md).
+
+### A claim about crime statistics
+
+A common sentiment about crime.
+
+```markdown
+# ClaimCheck — "Crime has never been this bad"
+
+**Summary:** clear failures: 3 · partial: 3 · passed: 0 · N/A: 1
+**Score:** 1.5 / 6 (1 N/A)
+
+### 2 · Quantitative and comparative literacy — clear failure
+
+> "More than a million violent crimes were reported last year." · "It is the worst it has ever been in this country"
+
+Why: A count with no rate and no earlier year. FBI: 1,119,768
+violent crimes in 2025, 327.6 per 100,000 people. In 1991:
+1,911,767, and 758.2 per 100,000. The 2025 rate is about 43% of the
+1991 rate.
+
+### 3 · Scale and boundary literacy — partial
+
+> "In my city, murders went from 30 to 40 in a single year." · "what is happening here is happening everywhere."
+
+Why: The local rise is a real concern. The national figure moved
+the other way: murders fell an estimated 18.1% from 2024 to 2025
+(FBI).
+```
+
+The local question survives: the city’s own counts, as a rate, over ten years. So does the point about unreported crime: about half of violent victimizations were not reported to police (BJS, 2024). [Full report](/samples/crime-statistics.claimcheck.md).
 
 ## A claim that mostly holds (illustrative)
 
