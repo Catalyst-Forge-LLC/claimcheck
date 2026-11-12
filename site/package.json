@@ -13,7 +13,7 @@
 		"deploy": "pnpm ship"
 	},
 	"devDependencies": {
-		"getfilepress": "^0.1.54",
+		"getfilepress": "^0.1.59",
 		"wrangler": "^4.28.0"
 	},
 	"pnpm": {
@@ -25,9 +25,6 @@
 			"esbuild",
 			"getfilepress",
 			"workerd"
-		],
-		"patchedDependencies": {
-			"getfilepress@0.1.58": "patches/getfilepress@0.1.58.patch"
-		}
+		]
 	}
 }
